@@ -9,4 +9,4 @@ How to Use
 - docs directory includes the final project report and presentation slides. 
 
 Authors
-Lawrence Park, Jin Hee Kim, Sadegh Yazdanshenas
+- Lawrence Park, Jin Hee Kim, Sadegh Yazdanshenas
