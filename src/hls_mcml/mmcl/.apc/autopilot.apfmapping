@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="mcml.cpp" path="C:\Users\lawpark\Documents\hls_prj\mmcl\mcml.cpp"/>
+    <originFiles name="mcml.h" path="C:\Users\lawpark\Documents\hls_prj\mmcl\mcml.h"/>
+  </source>
+  <testbench>
+    <originFiles name="1-100.cpp" path="C:\Users\lawpark\Documents\hls_prj\mmcl\1-100.cpp"/>
+    <originFiles name="2-1-10-ref.cpp" path="C:\Users\lawpark\Documents\hls_prj\mmcl\2-1-10-ref.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

@@ -1,0 +1,135 @@
+19:59:37 **** Build of configuration Debug for project k_mean ****
+make all 
+Building file: C:/Users/lawpark/k_mean/k_mean/k_mean_tb.cpp
+Invoking: GCC C++ Compiler
+g++ -DAESL_TB -D__llvm__ -D__llvm__ -IC:/Xilinx/Vivado_HLS/2015.4/include/ap_sysc -IC:/Users/lawpark/k_mean -IC:/Xilinx/Vivado_HLS/2015.4/include/etc -IC:/Xilinx/Vivado_HLS/2015.4/win64/tools/auto_cc/include -IC:/Xilinx/Vivado_HLS/2015.4/win64/tools/systemc/include -IC:/Xilinx/Vivado_HLS/2015.4/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"testbench/k_mean_tb.d" -MT"testbench/k_mean_tb.d" -o "testbench/k_mean_tb.o" "C:/Users/lawpark/k_mean/k_mean/k_mean_tb.cpp"
+C:/Users/lawpark/k_mean/k_mean/k_mean_tb.cpp: In function 'int main(int, char**)':
+C:/Users/lawpark/k_mean/k_mean/k_mean_tb.cpp:62:24: warning: extended initializer lists only available with -std=c++0x or -std=gnu++0x [enabled by default]
+C:/Users/lawpark/k_mean/k_mean/k_mean_tb.cpp:62:24: warning: extended initializer lists only available with -std=c++0x or -std=gnu++0x [enabled by default]
+C:/Users/lawpark/k_mean/k_mean/k_mean_tb.cpp:67:18: warning: array subscript has type 'char' [-Wchar-subscripts]
+C:/Users/lawpark/k_mean/k_mean/k_mean_tb.cpp:68:19: warning: array subscript has type 'char' [-Wchar-subscripts]
+C:/Users/lawpark/k_mean/k_mean/k_mean_tb.cpp:69:19: warning: array subscript has type 'char' [-Wchar-subscripts]
+Finished building: C:/Users/lawpark/k_mean/k_mean/k_mean_tb.cpp
+ 
+Building file: C:/Users/lawpark/k_mean/k_mean/k_mean.cpp
+Invoking: GCC C++ Compiler
+g++ -DAESL_TB -D__llvm__ -D__llvm__ -IC:/Xilinx/Vivado_HLS/2015.4/include/ap_sysc -IC:/Users/lawpark/k_mean -IC:/Xilinx/Vivado_HLS/2015.4/include/etc -IC:/Xilinx/Vivado_HLS/2015.4/win64/tools/auto_cc/include -IC:/Xilinx/Vivado_HLS/2015.4/win64/tools/systemc/include -IC:/Xilinx/Vivado_HLS/2015.4/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"source/k_mean.d" -MT"source/k_mean.d" -o "source/k_mean.o" "C:/Users/lawpark/k_mean/k_mean/k_mean.cpp"
+C:/Users/lawpark/k_mean/k_mean/k_mean.cpp: In function 'k_id_t get_closet_centroid(k_id_t, data_2d_t*, data_2d_t)':
+C:/Users/lawpark/k_mean/k_mean/k_mean.cpp:28:18: warning: array subscript has type 'char' [-Wchar-subscripts]
+C:/Users/lawpark/k_mean/k_mean/k_mean.cpp:30:18: warning: array subscript has type 'char' [-Wchar-subscripts]
+C:/Users/lawpark/k_mean/k_mean/k_mean.cpp: In function 'void compute_cluster_mean(k_id_t, data_2d_t*, data_2d_t*, k_id_t*)':
+C:/Users/lawpark/k_mean/k_mean/k_mean.cpp:57:20: warning: array subscript has type 'char' [-Wchar-subscripts]
+C:/Users/lawpark/k_mean/k_mean/k_mean.cpp:58:20: warning: array subscript has type 'char' [-Wchar-subscripts]
+C:/Users/lawpark/k_mean/k_mean/k_mean.cpp:59:20: warning: array subscript has type 'char' [-Wchar-subscripts]
+Finished building: C:/Users/lawpark/k_mean/k_mean/k_mean.cpp
+ 
+Building target: a.exe
+Invoking: GCC C++ Linker
+g++ -LC:/Xilinx/Vivado_HLS/2015.4/win64/tools/systemc/lib -o "a.exe"  ./testbench/k_mean_tb.o  ./source/k_mean.o   
+Finished building target: a.exe
+ 
+20:01:46 **** Incremental Build of configuration Debug for project k_mean ****
+make all 
+make: Nothing to be done for `all'.
+14:41:20 **** Clean-only build of configuration Debug for project k_mean ****
+make clean 
+rm -rf  ./testbench/k_mean_tb.o  ./source/k_mean.o  ./testbench/k_mean_tb.d  ./source/k_mean.d  a.exe
+ 
+14:41:20 **** Build of configuration Debug for project k_mean ****
+make all 
+Building file: C:/Users/lawpark/k_mean/k_mean/k_mean_tb.cpp
+Invoking: GCC C++ Compiler
+g++ -DAESL_TB -D__llvm__ -D__llvm__ -IC:/Xilinx/Vivado_HLS/2015.4/include/ap_sysc -IC:/Users/lawpark/k_mean -IC:/Xilinx/Vivado_HLS/2015.4/include/etc -IC:/Xilinx/Vivado_HLS/2015.4/win64/tools/auto_cc/include -IC:/Xilinx/Vivado_HLS/2015.4/win64/tools/systemc/include -IC:/Xilinx/Vivado_HLS/2015.4/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"testbench/k_mean_tb.d" -MT"testbench/k_mean_tb.d" -o "testbench/k_mean_tb.o" "C:/Users/lawpark/k_mean/k_mean/k_mean_tb.cpp"
+C:/Users/lawpark/k_mean/k_mean/k_mean_tb.cpp: In function 'int main(int, char**)':
+C:/Users/lawpark/k_mean/k_mean/k_mean_tb.cpp:22:7: warning: unused variable 'whatever' [-Wunused-variable]
+C:/Users/lawpark/k_mean/k_mean/k_mean_tb.cpp:69:24: warning: extended initializer lists only available with -std=c++0x or -std=gnu++0x [enabled by default]
+C:/Users/lawpark/k_mean/k_mean/k_mean_tb.cpp:69:24: warning: extended initializer lists only available with -std=c++0x or -std=gnu++0x [enabled by default]
+C:/Users/lawpark/k_mean/k_mean/k_mean_tb.cpp:74:18: warning: array subscript has type 'char' [-Wchar-subscripts]
+C:/Users/lawpark/k_mean/k_mean/k_mean_tb.cpp:75:19: warning: array subscript has type 'char' [-Wchar-subscripts]
+C:/Users/lawpark/k_mean/k_mean/k_mean_tb.cpp:76:19: warning: array subscript has type 'char' [-Wchar-subscripts]
+Finished building: C:/Users/lawpark/k_mean/k_mean/k_mean_tb.cpp
+ 
+Building file: C:/Users/lawpark/k_mean/k_mean/k_mean.cpp
+Invoking: GCC C++ Compiler
+g++ -DAESL_TB -D__llvm__ -D__llvm__ -IC:/Xilinx/Vivado_HLS/2015.4/include/ap_sysc -IC:/Users/lawpark/k_mean -IC:/Xilinx/Vivado_HLS/2015.4/include/etc -IC:/Xilinx/Vivado_HLS/2015.4/win64/tools/auto_cc/include -IC:/Xilinx/Vivado_HLS/2015.4/win64/tools/systemc/include -IC:/Xilinx/Vivado_HLS/2015.4/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"source/k_mean.d" -MT"source/k_mean.d" -o "source/k_mean.o" "C:/Users/lawpark/k_mean/k_mean/k_mean.cpp"
+C:/Users/lawpark/k_mean/k_mean/k_mean.cpp:84:0: warning: ignoring #pragma HLS data_pack [-Wunknown-pragmas]
+C:/Users/lawpark/k_mean/k_mean/k_mean.cpp: In function 'void assign_cluster(k_id_t, data_2d_t*, data_2d_t*, k_id_t*)':
+C:/Users/lawpark/k_mean/k_mean/k_mean.cpp:12:5: warning: label 'assign_cluster_loop' defined but not used [-Wunused-label]
+C:/Users/lawpark/k_mean/k_mean/k_mean.cpp: In function 'k_id_t get_closet_centroid(k_id_t, data_2d_t*, data_2d_t)':
+C:/Users/lawpark/k_mean/k_mean/k_mean.cpp:28:18: warning: array subscript has type 'char' [-Wchar-subscripts]
+C:/Users/lawpark/k_mean/k_mean/k_mean.cpp:30:18: warning: array subscript has type 'char' [-Wchar-subscripts]
+C:/Users/lawpark/k_mean/k_mean/k_mean.cpp:26:2: warning: label 'centroid_loop' defined but not used [-Wunused-label]
+C:/Users/lawpark/k_mean/k_mean/k_mean.cpp: In function 'void compute_cluster_mean(k_id_t, data_2d_t*, data_2d_t*, k_id_t*)':
+C:/Users/lawpark/k_mean/k_mean/k_mean.cpp:62:20: warning: array subscript has type 'char' [-Wchar-subscripts]
+C:/Users/lawpark/k_mean/k_mean/k_mean.cpp:63:20: warning: array subscript has type 'char' [-Wchar-subscripts]
+C:/Users/lawpark/k_mean/k_mean/k_mean.cpp:64:20: warning: array subscript has type 'char' [-Wchar-subscripts]
+C:/Users/lawpark/k_mean/k_mean/k_mean.cpp:52:5: warning: label 'c_init_loop' defined but not used [-Wunused-label]
+C:/Users/lawpark/k_mean/k_mean/k_mean.cpp:60:5: warning: label 'c_accu_loop' defined but not used [-Wunused-label]
+C:/Users/lawpark/k_mean/k_mean/k_mean.cpp:68:5: warning: label 'c_div_loop' defined but not used [-Wunused-label]
+C:/Users/lawpark/k_mean/k_mean/k_mean.cpp: In function 'void k_mean(k_id_t, data_2d_t*, data_2d_t*)':
+C:/Users/lawpark/k_mean/k_mean/k_mean.cpp:98:2: warning: label 'k_mean_iter' defined but not used [-Wunused-label]
+C:/Users/lawpark/k_mean/k_mean/k_mean.cpp:104:3: warning: label 'convergence_check' defined but not used [-Wunused-label]
+Finished building: C:/Users/lawpark/k_mean/k_mean/k_mean.cpp
+ 
+Building target: a.exe
+Invoking: GCC C++ Linker
+g++ -LC:/Xilinx/Vivado_HLS/2015.4/win64/tools/systemc/lib -o "a.exe"  ./testbench/k_mean_tb.o  ./source/k_mean.o   
+Finished building target: a.exe
+ 
+17:54:11 **** Clean-only build of configuration Debug for project k_mean ****
+make clean 
+rm -rf  ./testbench/k_mean_tb.o  ./source/k_mean.o  ./testbench/k_mean_tb.d  ./source/k_mean.d  a.exe
+ 
+17:54:11 **** Build of configuration Debug for project k_mean ****
+make all 
+Building file: C:/Users/lawpark/k_mean/k_mean/k_mean_tb.cpp
+Invoking: GCC C++ Compiler
+g++ -DAESL_TB -D__llvm__ -D__llvm__ -IC:/Xilinx/Vivado_HLS/2015.4/include/ap_sysc -IC:/Users/lawpark/k_mean -IC:/Xilinx/Vivado_HLS/2015.4/include/etc -IC:/Xilinx/Vivado_HLS/2015.4/win64/tools/auto_cc/include -IC:/Xilinx/Vivado_HLS/2015.4/win64/tools/systemc/include -IC:/Xilinx/Vivado_HLS/2015.4/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"testbench/k_mean_tb.d" -MT"testbench/k_mean_tb.d" -o "testbench/k_mean_tb.o" "C:/Users/lawpark/k_mean/k_mean/k_mean_tb.cpp"
+C:/Users/lawpark/k_mean/k_mean/k_mean_tb.cpp: In function 'int main(int, char**)':
+C:/Users/lawpark/k_mean/k_mean/k_mean_tb.cpp:22:7: warning: unused variable 'whatever' [-Wunused-variable]
+C:/Users/lawpark/k_mean/k_mean/k_mean_tb.cpp:69:24: warning: extended initializer lists only available with -std=c++0x or -std=gnu++0x [enabled by default]
+C:/Users/lawpark/k_mean/k_mean/k_mean_tb.cpp:69:24: warning: extended initializer lists only available with -std=c++0x or -std=gnu++0x [enabled by default]
+C:/Users/lawpark/k_mean/k_mean/k_mean_tb.cpp:74:18: warning: array subscript has type 'char' [-Wchar-subscripts]
+C:/Users/lawpark/k_mean/k_mean/k_mean_tb.cpp:75:19: warning: array subscript has type 'char' [-Wchar-subscripts]
+C:/Users/lawpark/k_mean/k_mean/k_mean_tb.cpp:76:19: warning: array subscript has type 'char' [-Wchar-subscripts]
+Finished building: C:/Users/lawpark/k_mean/k_mean/k_mean_tb.cpp
+ 
+Building file: C:/Users/lawpark/k_mean/k_mean/k_mean.cpp
+Invoking: GCC C++ Compiler
+g++ -DAESL_TB -D__llvm__ -D__llvm__ -IC:/Xilinx/Vivado_HLS/2015.4/include/ap_sysc -IC:/Users/lawpark/k_mean -IC:/Xilinx/Vivado_HLS/2015.4/include/etc -IC:/Xilinx/Vivado_HLS/2015.4/win64/tools/auto_cc/include -IC:/Xilinx/Vivado_HLS/2015.4/win64/tools/systemc/include -IC:/Xilinx/Vivado_HLS/2015.4/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"source/k_mean.d" -MT"source/k_mean.d" -o "source/k_mean.o" "C:/Users/lawpark/k_mean/k_mean/k_mean.cpp"
+C:/Users/lawpark/k_mean/k_mean/k_mean.cpp:115:0: warning: ignoring #pragma HLS data_pack [-Wunknown-pragmas]
+C:/Users/lawpark/k_mean/k_mean/k_mean.cpp:116:0: warning: ignoring #pragma HLS data_pack [-Wunknown-pragmas]
+C:/Users/lawpark/k_mean/k_mean/k_mean.cpp: In function 'void assign_cluster(k_id_t, data_2d_t*, data_2d_t*, k_id_t*)':
+C:/Users/lawpark/k_mean/k_mean/k_mean.cpp:11:5: warning: label 'assign_cluster_loop' defined but not used [-Wunused-label]
+C:/Users/lawpark/k_mean/k_mean/k_mean.cpp: In function 'k_id_t get_closet_centroid(k_id_t, data_2d_t*, data_2d_t)':
+C:/Users/lawpark/k_mean/k_mean/k_mean.cpp:27:18: warning: array subscript has type 'char' [-Wchar-subscripts]
+C:/Users/lawpark/k_mean/k_mean/k_mean.cpp:29:18: warning: array subscript has type 'char' [-Wchar-subscripts]
+C:/Users/lawpark/k_mean/k_mean/k_mean.cpp:25:2: warning: label 'centroid_loop' defined but not used [-Wunused-label]
+C:/Users/lawpark/k_mean/k_mean/k_mean.cpp: In function 'void compute_cluster_mean(k_id_t, data_2d_t*, data_2d_t*, k_id_t*)':
+C:/Users/lawpark/k_mean/k_mean/k_mean.cpp:75:22: warning: array subscript has type 'char' [-Wchar-subscripts]
+C:/Users/lawpark/k_mean/k_mean/k_mean.cpp:76:22: warning: array subscript has type 'char' [-Wchar-subscripts]
+C:/Users/lawpark/k_mean/k_mean/k_mean.cpp:77:22: warning: array subscript has type 'char' [-Wchar-subscripts]
+C:/Users/lawpark/k_mean/k_mean/k_mean.cpp:79:24: warning: array subscript has type 'char' [-Wchar-subscripts]
+C:/Users/lawpark/k_mean/k_mean/k_mean.cpp:80:24: warning: array subscript has type 'char' [-Wchar-subscripts]
+C:/Users/lawpark/k_mean/k_mean/k_mean.cpp:81:24: warning: array subscript has type 'char' [-Wchar-subscripts]
+C:/Users/lawpark/k_mean/k_mean/k_mean.cpp:83:24: warning: array subscript has type 'char' [-Wchar-subscripts]
+C:/Users/lawpark/k_mean/k_mean/k_mean.cpp:84:24: warning: array subscript has type 'char' [-Wchar-subscripts]
+C:/Users/lawpark/k_mean/k_mean/k_mean.cpp:85:24: warning: array subscript has type 'char' [-Wchar-subscripts]
+C:/Users/lawpark/k_mean/k_mean/k_mean.cpp:87:24: warning: array subscript has type 'char' [-Wchar-subscripts]
+C:/Users/lawpark/k_mean/k_mean/k_mean.cpp:88:24: warning: array subscript has type 'char' [-Wchar-subscripts]
+C:/Users/lawpark/k_mean/k_mean/k_mean.cpp:89:24: warning: array subscript has type 'char' [-Wchar-subscripts]
+C:/Users/lawpark/k_mean/k_mean/k_mean.cpp:101:5: warning: label 'c_div_loop' defined but not used [-Wunused-label]
+C:/Users/lawpark/k_mean/k_mean/k_mean.cpp:54:5: warning: label 'c_init_loop' defined but not used [-Wunused-label]
+C:/Users/lawpark/k_mean/k_mean/k_mean.cpp:73:5: warning: label 'c_accu_loop' defined but not used [-Wunused-label]
+C:/Users/lawpark/k_mean/k_mean/k_mean.cpp:93:5: warning: label 'c_reduce_loop' defined but not used [-Wunused-label]
+C:/Users/lawpark/k_mean/k_mean/k_mean.cpp: In function 'void k_mean(k_id_t, data_2d_t*, data_2d_t*)':
+C:/Users/lawpark/k_mean/k_mean/k_mean.cpp:127:2: warning: label 'k_mean_iter' defined but not used [-Wunused-label]
+C:/Users/lawpark/k_mean/k_mean/k_mean.cpp:131:3: warning: label 'convergence_check' defined but not used [-Wunused-label]
+C:/Users/lawpark/k_mean/k_mean/k_mean.cpp:142:3: warning: 'converged' may be used uninitialized in this function [-Wuninitialized]
+Finished building: C:/Users/lawpark/k_mean/k_mean/k_mean.cpp
+ 
+Building target: a.exe
+Invoking: GCC C++ Linker
+g++ -LC:/Xilinx/Vivado_HLS/2015.4/win64/tools/systemc/lib -o "a.exe"  ./testbench/k_mean_tb.o  ./source/k_mean.o   
+Finished building target: a.exe
+ 
