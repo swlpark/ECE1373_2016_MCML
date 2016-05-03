@@ -1,0 +1,716 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Wed Apr 27 19:34:54 2016
+# Process ID: 6588
+# Current directory: C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.runs/impl_2
+# Command line: vivado.exe -log system_top.vdi -applog -messageDb vivado.pb -mode batch -source system_top.tcl -notrace
+# Log file: C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.runs/impl_2/system_top.vdi
+# Journal file: C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.runs/impl_2\vivado.jou
+#-----------------------------------------------------------
+source system_top.tcl -notrace
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Netlist 29-17] Analyzing 5632 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2015.4
+INFO: [Device 21-403] Loading part xc7vx690tffg1761-3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [c:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.srcs/sources_1/bd/mb_system/ip/mb_system_microblaze_0_0/mb_system_microblaze_0_0.xdc] for cell 'system_i/mb_system_i/microblaze_0/U0'
+Finished Parsing XDC File [c:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.srcs/sources_1/bd/mb_system/ip/mb_system_microblaze_0_0/mb_system_microblaze_0_0.xdc] for cell 'system_i/mb_system_i/microblaze_0/U0'
+Parsing XDC File [c:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.srcs/sources_1/bd/mb_system/ip/mb_system_dlmb_v10_0/mb_system_dlmb_v10_0.xdc] for cell 'system_i/mb_system_i/microblaze_0_local_memory/dlmb_v10/U0'
+Finished Parsing XDC File [c:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.srcs/sources_1/bd/mb_system/ip/mb_system_dlmb_v10_0/mb_system_dlmb_v10_0.xdc] for cell 'system_i/mb_system_i/microblaze_0_local_memory/dlmb_v10/U0'
+Parsing XDC File [c:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.srcs/sources_1/bd/mb_system/ip/mb_system_ilmb_v10_0/mb_system_ilmb_v10_0.xdc] for cell 'system_i/mb_system_i/microblaze_0_local_memory/ilmb_v10/U0'
+Finished Parsing XDC File [c:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.srcs/sources_1/bd/mb_system/ip/mb_system_ilmb_v10_0/mb_system_ilmb_v10_0.xdc] for cell 'system_i/mb_system_i/microblaze_0_local_memory/ilmb_v10/U0'
+Parsing XDC File [c:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.srcs/sources_1/bd/mb_system/ip/mb_system_microblaze_0_axi_intc_0/mb_system_microblaze_0_axi_intc_0.xdc] for cell 'system_i/mb_system_i/microblaze_0_axi_intc/U0'
+Finished Parsing XDC File [c:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.srcs/sources_1/bd/mb_system/ip/mb_system_microblaze_0_axi_intc_0/mb_system_microblaze_0_axi_intc_0.xdc] for cell 'system_i/mb_system_i/microblaze_0_axi_intc/U0'
+Parsing XDC File [c:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.srcs/sources_1/bd/mb_system/ip/mb_system_mdm_1_0/mb_system_mdm_1_0.xdc] for cell 'system_i/mb_system_i/mdm_1/U0'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [c:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.srcs/sources_1/bd/mb_system/ip/mb_system_mdm_1_0/mb_system_mdm_1_0.xdc:50]
+get_clocks: Time (s): cpu = 00:00:31 ; elapsed = 00:00:25 . Memory (MB): peak = 2089.820 ; gain = 855.695
+Finished Parsing XDC File [c:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.srcs/sources_1/bd/mb_system/ip/mb_system_mdm_1_0/mb_system_mdm_1_0.xdc] for cell 'system_i/mb_system_i/mdm_1/U0'
+Parsing XDC File [c:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.srcs/sources_1/bd/mb_system/ip/mb_system_clk_wiz_1_0/mb_system_clk_wiz_1_0_board.xdc] for cell 'system_i/mb_system_i/clk_wiz_1/inst'
+Finished Parsing XDC File [c:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.srcs/sources_1/bd/mb_system/ip/mb_system_clk_wiz_1_0/mb_system_clk_wiz_1_0_board.xdc] for cell 'system_i/mb_system_i/clk_wiz_1/inst'
+Parsing XDC File [c:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.srcs/sources_1/bd/mb_system/ip/mb_system_clk_wiz_1_0/mb_system_clk_wiz_1_0.xdc] for cell 'system_i/mb_system_i/clk_wiz_1/inst'
+INFO: [Timing 38-2] Deriving generated clocks [c:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.srcs/sources_1/bd/mb_system/ip/mb_system_clk_wiz_1_0/mb_system_clk_wiz_1_0.xdc:56]
+Finished Parsing XDC File [c:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.srcs/sources_1/bd/mb_system/ip/mb_system_clk_wiz_1_0/mb_system_clk_wiz_1_0.xdc] for cell 'system_i/mb_system_i/clk_wiz_1/inst'
+Parsing XDC File [c:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.srcs/sources_1/bd/mb_system/ip/mb_system_rst_clk_wiz_1_100M_0/mb_system_rst_clk_wiz_1_100M_0_board.xdc] for cell 'system_i/mb_system_i/rst_clk_wiz_1_100M'
+Finished Parsing XDC File [c:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.srcs/sources_1/bd/mb_system/ip/mb_system_rst_clk_wiz_1_100M_0/mb_system_rst_clk_wiz_1_100M_0_board.xdc] for cell 'system_i/mb_system_i/rst_clk_wiz_1_100M'
+Parsing XDC File [c:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.srcs/sources_1/bd/mb_system/ip/mb_system_rst_clk_wiz_1_100M_0/mb_system_rst_clk_wiz_1_100M_0.xdc] for cell 'system_i/mb_system_i/rst_clk_wiz_1_100M'
+Finished Parsing XDC File [c:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.srcs/sources_1/bd/mb_system/ip/mb_system_rst_clk_wiz_1_100M_0/mb_system_rst_clk_wiz_1_100M_0.xdc] for cell 'system_i/mb_system_i/rst_clk_wiz_1_100M'
+Parsing XDC File [c:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.srcs/sources_1/bd/mb_system/ip/mb_system_axi_gpio_0_0/mb_system_axi_gpio_0_0_board.xdc] for cell 'system_i/mb_system_i/gpio_led_RnM/U0'
+Finished Parsing XDC File [c:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.srcs/sources_1/bd/mb_system/ip/mb_system_axi_gpio_0_0/mb_system_axi_gpio_0_0_board.xdc] for cell 'system_i/mb_system_i/gpio_led_RnM/U0'
+Parsing XDC File [c:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.srcs/sources_1/bd/mb_system/ip/mb_system_axi_gpio_0_0/mb_system_axi_gpio_0_0.xdc] for cell 'system_i/mb_system_i/gpio_led_RnM/U0'
+Finished Parsing XDC File [c:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.srcs/sources_1/bd/mb_system/ip/mb_system_axi_gpio_0_0/mb_system_axi_gpio_0_0.xdc] for cell 'system_i/mb_system_i/gpio_led_RnM/U0'
+Parsing XDC File [c:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.srcs/sources_1/bd/mb_system/ip/mb_system_axi_gpio_0_1/mb_system_axi_gpio_0_1_board.xdc] for cell 'system_i/mb_system_i/gpio_btn_RnM/U0'
+Finished Parsing XDC File [c:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.srcs/sources_1/bd/mb_system/ip/mb_system_axi_gpio_0_1/mb_system_axi_gpio_0_1_board.xdc] for cell 'system_i/mb_system_i/gpio_btn_RnM/U0'
+Parsing XDC File [c:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.srcs/sources_1/bd/mb_system/ip/mb_system_axi_gpio_0_1/mb_system_axi_gpio_0_1.xdc] for cell 'system_i/mb_system_i/gpio_btn_RnM/U0'
+Finished Parsing XDC File [c:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.srcs/sources_1/bd/mb_system/ip/mb_system_axi_gpio_0_1/mb_system_axi_gpio_0_1.xdc] for cell 'system_i/mb_system_i/gpio_btn_RnM/U0'
+Parsing XDC File [C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.srcs/constrs_1/new/master.xdc]
+Finished Parsing XDC File [C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.srcs/constrs_1/new/master.xdc]
+Parsing XDC File [c:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.srcs/sources_1/bd/mb_system/ip/mb_system_microblaze_0_axi_intc_0/mb_system_microblaze_0_axi_intc_0_clocks.xdc] for cell 'system_i/mb_system_i/microblaze_0_axi_intc/U0'
+Finished Parsing XDC File [c:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.srcs/sources_1/bd/mb_system/ip/mb_system_microblaze_0_axi_intc_0/mb_system_microblaze_0_axi_intc_0_clocks.xdc] for cell 'system_i/mb_system_i/microblaze_0_axi_intc/U0'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Generating merged BMM file for the design top 'system_top'...
+INFO: [Memdata 28-144] Successfully populated the BRAM INIT strings from the following elf files: c:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.srcs/sources_1/bd/mb_system/ip/mb_system_microblaze_0_0/data/mb_bootloop_le.elf 
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 176 instances were transformed.
+  LUT6_2 => LUT6_2 (LUT5, LUT6): 64 instances
+  RAM16X1D => RAM32X1D (RAMD32, RAMD32): 32 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 58 instances
+  RAM64M => RAM64M (RAMD64E, RAMD64E, RAMD64E, RAMD64E): 22 instances
+
+link_design: Time (s): cpu = 00:01:23 ; elapsed = 00:01:18 . Memory (MB): peak = 2100.234 ; gain = 1889.082
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7vx690t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7vx690t'
+INFO: [Common 17-1223] The version limit for your license is '2015.12' and will expire in -118 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2100.234 ; gain = 0.000
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Starting Logic Optimization Task
+Implement Debug Cores | Checksum: 1a7889f83
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 35 inverter(s) to 378 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: fac29af2
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:11 . Memory (MB): peak = 2100.234 ; gain = 0.000
+
+Phase 2 Constant Propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-10] Eliminated 1008 cells.
+Phase 2 Constant Propagation | Checksum: 124b5a44f
+
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:29 . Memory (MB): peak = 2100.234 ; gain = 0.000
+
+Phase 3 Sweep
+WARNING: [Opt 31-6] Deleting driverless net: system_i/mb_system_i/mcml_0/inst/grp_mcml_rFresnel_fu_5654/mcml_dcmp_64ns_64ns_1_3_U39/mcml_ap_dcmp_1_no_dsp_64_u/U0/i_synth/COMP_OP.SPD.OP/STRUCT_CMP.A_EXP_ALL_ONE_DET/din0_buf1_reg[49][0].
+WARNING: [Opt 31-6] Deleting driverless net: system_i/mb_system_i/mcml_0/inst/grp_mcml_rFresnel_fu_5654/mcml_dcmp_64ns_64ns_1_3_U39/mcml_ap_dcmp_1_no_dsp_64_u/U0/i_synth/COMP_OP.SPD.OP/STRUCT_CMP.A_FRAC_NOT_ZERO_DET/CARRY_OUT.
+WARNING: [Opt 31-6] Deleting driverless net: system_i/mb_system_i/mcml_0/inst/grp_mcml_rFresnel_fu_5654/mcml_dcmp_64ns_64ns_1_3_U39/mcml_ap_dcmp_1_no_dsp_64_u/U0/i_synth/COMP_OP.SPD.OP/STRUCT_CMP.B_EXP_ALL_ONE_DET/CARRYS_OUT[0].
+WARNING: [Opt 31-6] Deleting driverless net: system_i/mb_system_i/mcml_0/inst/grp_mcml_rFresnel_fu_5654/mcml_dcmp_64ns_64ns_1_3_U39/mcml_ap_dcmp_1_no_dsp_64_u/U0/i_synth/COMP_OP.SPD.OP/STRUCT_CMP.B_FRAC_NOT_ZERO_DET/CARRY_OUT.
+WARNING: [Opt 31-6] Deleting driverless net: system_i/mb_system_i/mcml_0/inst/grp_mcml_rFresnel_fu_5654/mcml_dcmp_64ns_64ns_1_3_U40/mcml_ap_dcmp_1_no_dsp_64_u/U0/i_synth/COMP_OP.SPD.OP/STRUCT_CMP.A_EXP_ALL_ONE_DET/din0_buf1_reg[49][0].
+WARNING: [Opt 31-6] Deleting driverless net: system_i/mb_system_i/mcml_0/inst/grp_mcml_rFresnel_fu_5654/mcml_dcmp_64ns_64ns_1_3_U40/mcml_ap_dcmp_1_no_dsp_64_u/U0/i_synth/COMP_OP.SPD.OP/STRUCT_CMP.A_FRAC_NOT_ZERO_DET/CARRY_OUT.
+WARNING: [Opt 31-6] Deleting driverless net: system_i/mb_system_i/mcml_0/inst/grp_mcml_rFresnel_fu_5654/mcml_dcmp_64ns_64ns_1_3_U40/mcml_ap_dcmp_1_no_dsp_64_u/U0/i_synth/COMP_OP.SPD.OP/STRUCT_CMP.B_EXP_ALL_ONE_DET/CARRYS_OUT[0].
+WARNING: [Opt 31-6] Deleting driverless net: system_i/mb_system_i/mcml_0/inst/grp_mcml_rFresnel_fu_5654/mcml_dcmp_64ns_64ns_1_3_U40/mcml_ap_dcmp_1_no_dsp_64_u/U0/i_synth/COMP_OP.SPD.OP/STRUCT_CMP.B_FRAC_NOT_ZERO_DET/CARRY_OUT.
+WARNING: [Opt 31-6] Deleting driverless net: system_i/mb_system_i/mcml_0/inst/grp_mcml_rFresnel_fu_5654/mcml_fadd_32ns_32ns_32_9_full_dsp_U10/mcml_ap_fadd_7_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/ZERO_14_DET.ZERO_DET/CARRY_OUT.
+WARNING: [Opt 31-6] Deleting driverless net: system_i/mb_system_i/mcml_0/inst/grp_mcml_rFresnel_fu_5654/mcml_fadd_32ns_32ns_32_9_full_dsp_U3/mcml_ap_fadd_7_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/ZERO_14_DET.ZERO_DET/CARRY_OUT.
+WARNING: [Opt 31-6] Deleting driverless net: system_i/mb_system_i/mcml_0/inst/grp_mcml_rFresnel_fu_5654/mcml_fadd_32ns_32ns_32_9_full_dsp_U7/mcml_ap_fadd_7_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/ZERO_14_DET.ZERO_DET/CARRY_OUT.
+WARNING: [Opt 31-6] Deleting driverless net: system_i/mb_system_i/mcml_0/inst/grp_mcml_rFresnel_fu_5654/mcml_fadd_32ns_32ns_32_9_full_dsp_U8/mcml_ap_fadd_7_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/ZERO_14_DET.ZERO_DET/CARRY_OUT.
+WARNING: [Opt 31-6] Deleting driverless net: system_i/mb_system_i/mcml_0/inst/grp_mcml_rFresnel_fu_5654/mcml_fptrunc_64ns_32_3_U26/mcml_ap_fptrunc_1_no_dsp_64_u/U0/i_synth/FLT_TO_FLT_OP.SPD.OP/RND_REQ.ROUND/RND_BIT_GEN/CARRYS_OUT[0].
+WARNING: [Opt 31-6] Deleting driverless net: system_i/mb_system_i/mcml_0/inst/grp_mcml_rFresnel_fu_5654/mcml_fptrunc_64ns_32_3_U26/mcml_ap_fptrunc_1_no_dsp_64_u/U0/i_synth/FLT_TO_FLT_OP.SPD.OP/RND_REQ.ROUND/CARRYS_OUT[0].
+WARNING: [Opt 31-6] Deleting driverless net: system_i/mb_system_i/mcml_0/inst/grp_mcml_rFresnel_fu_5654/mcml_fptrunc_64ns_32_3_U26/mcml_ap_fptrunc_1_no_dsp_64_u/U0/i_synth/FLT_TO_FLT_OP.SPD.OP/RND_REQ.Z_DET_REQ.DET_ZERO/CARRY_OUT.
+WARNING: [Opt 31-6] Deleting driverless net: system_i/mb_system_i/mcml_0/inst/grp_mcml_rFresnel_fu_5654/mcml_fsub_32ns_32ns_32_9_full_dsp_U2/mcml_ap_fsub_7_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/ZERO_14_DET.ZERO_DET/CARRY_OUT.
+WARNING: [Opt 31-6] Deleting driverless net: system_i/mb_system_i/mcml_0/inst/grp_mcml_rFresnel_fu_5654/mcml_fsub_32ns_32ns_32_9_full_dsp_U4/mcml_ap_fsub_7_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/ZERO_14_DET.ZERO_DET/CARRY_OUT.
+WARNING: [Opt 31-6] Deleting driverless net: system_i/mb_system_i/mcml_0/inst/grp_mcml_rFresnel_fu_5654/mcml_fsub_32ns_32ns_32_9_full_dsp_U5/mcml_ap_fsub_7_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/ZERO_14_DET.ZERO_DET/CARRY_OUT.
+WARNING: [Opt 31-6] Deleting driverless net: system_i/mb_system_i/mcml_0/inst/grp_mcml_rFresnel_fu_5654/mcml_fsub_32ns_32ns_32_9_full_dsp_U6/mcml_ap_fsub_7_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/ZERO_14_DET.ZERO_DET/CARRY_OUT.
+WARNING: [Opt 31-6] Deleting driverless net: system_i/mb_system_i/mcml_0/inst/grp_mcml_rFresnel_fu_5654/mcml_fsub_32ns_32ns_32_9_full_dsp_U9/mcml_ap_fsub_7_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/ZERO_14_DET.ZERO_DET/CARRY_OUT.
+WARNING: [Opt 31-6] Deleting driverless net: system_i/mb_system_i/mcml_0/inst/mcml_dcmp_64ns_64ns_1_3_U68/mcml_ap_dcmp_1_no_dsp_64_u/U0/i_synth/COMP_OP.SPD.OP/STRUCT_CMP.A_EXP_ALL_ONE_DET/din0_buf1_reg[49][0].
+WARNING: [Opt 31-6] Deleting driverless net: system_i/mb_system_i/mcml_0/inst/mcml_dcmp_64ns_64ns_1_3_U68/mcml_ap_dcmp_1_no_dsp_64_u/U0/i_synth/COMP_OP.SPD.OP/STRUCT_CMP.A_FRAC_NOT_ZERO_DET/CARRY_OUT.
+WARNING: [Opt 31-6] Deleting driverless net: system_i/mb_system_i/mcml_0/inst/mcml_dcmp_64ns_64ns_1_3_U68/mcml_ap_dcmp_1_no_dsp_64_u/U0/i_synth/COMP_OP.SPD.OP/STRUCT_CMP.B_EXP_ALL_ONE_DET/CARRYS_OUT[0].
+WARNING: [Opt 31-6] Deleting driverless net: system_i/mb_system_i/mcml_0/inst/mcml_dcmp_64ns_64ns_1_3_U68/mcml_ap_dcmp_1_no_dsp_64_u/U0/i_synth/COMP_OP.SPD.OP/STRUCT_CMP.B_FRAC_NOT_ZERO_DET/CARRY_OUT.
+WARNING: [Opt 31-6] Deleting driverless net: system_i/mb_system_i/mcml_0/inst/mcml_fadd_32ns_32ns_32_9_full_dsp_U46/mcml_ap_fadd_7_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/ZERO_14_DET.ZERO_DET/CARRY_OUT.
+WARNING: [Opt 31-6] Deleting driverless net: system_i/mb_system_i/mcml_0/inst/mcml_fadd_32ns_32ns_32_9_full_dsp_U48/mcml_ap_fadd_7_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/ZERO_14_DET.ZERO_DET/CARRY_OUT.
+WARNING: [Opt 31-6] Deleting driverless net: system_i/mb_system_i/mcml_0/inst/mcml_faddfsub_32ns_32ns_32_9_full_dsp_U44/mcml_ap_faddfsub_7_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/ZERO_14_DET.ZERO_DET/CARRY_OUT.
+WARNING: [Opt 31-6] Deleting driverless net: system_i/mb_system_i/mcml_0/inst/mcml_faddfsub_32ns_32ns_32_9_full_dsp_U45/mcml_ap_faddfsub_7_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/ZERO_14_DET.ZERO_DET/CARRY_OUT.
+WARNING: [Opt 31-6] Deleting driverless net: system_i/mb_system_i/mcml_0/inst/mcml_fptrunc_64ns_32_3_U59/mcml_ap_fptrunc_1_no_dsp_64_u/U0/i_synth/FLT_TO_FLT_OP.SPD.OP/RND_REQ.ROUND/RND_BIT_GEN/CARRYS_OUT[0].
+WARNING: [Opt 31-6] Deleting driverless net: system_i/mb_system_i/mcml_0/inst/mcml_fptrunc_64ns_32_3_U59/mcml_ap_fptrunc_1_no_dsp_64_u/U0/i_synth/FLT_TO_FLT_OP.SPD.OP/RND_REQ.ROUND/CARRYS_OUT[0].
+WARNING: [Opt 31-6] Deleting driverless net: system_i/mb_system_i/mcml_0/inst/mcml_fptrunc_64ns_32_3_U59/mcml_ap_fptrunc_1_no_dsp_64_u/U0/i_synth/FLT_TO_FLT_OP.SPD.OP/RND_REQ.Z_DET_REQ.DET_ZERO/CARRY_OUT.
+WARNING: [Opt 31-6] Deleting driverless net: system_i/mb_system_i/mcml_0/inst/mcml_fsub_32ns_32ns_32_9_full_dsp_U47/mcml_ap_fsub_7_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/ZERO_14_DET.ZERO_DET/CARRY_OUT.
+WARNING: [Opt 31-6] Deleting driverless net: system_i/mb_system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/ALU_I/ALL_Bits[0].ALU_Bit_I1/LO.
+WARNING: [Opt 31-6] Deleting driverless net: system_i/mb_system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/ALU_I/ALL_Bits[1].ALU_Bit_I1/EX_CarryOut.
+WARNING: [Opt 31-6] Deleting driverless net: system_i/mb_system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/ALU_I/ex_alu_carryin.
+WARNING: [Opt 31-6] Deleting driverless net: system_i/mb_system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/FPU_I/Use_FPU.ex_Exp_Equal_2/The_Compare[0].carry_and_I1/carry_2.
+WARNING: [Opt 31-6] Deleting driverless net: system_i/mb_system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/FPU_I/Use_FPU.ex_Exp_Equal_2/The_Compare[1].carry_and_I1/carry_1.
+WARNING: [Opt 31-6] Deleting driverless net: system_i/mb_system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/FPU_I/Use_FPU.ex_Exp_Equal_2/The_Compare[1].carry_and_I1/carry_2.
+WARNING: [Opt 31-6] Deleting driverless net: system_i/mb_system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/FPU_I/Use_FPU.ex_Exp_Equal_2/The_Compare[2].carry_and_I1/carry_1.
+WARNING: [Opt 31-6] Deleting driverless net: system_i/mb_system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/FPU_I/Use_FPU.ex_Exp_Mant_Equal_2/The_Compare[0].carry_and_I1/carry_7.
+WARNING: [Opt 31-6] Deleting driverless net: system_i/mb_system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/FPU_I/Use_FPU.ex_Exp_Mant_Equal_2/The_Compare[1].carry_and_I1/carry_6.
+WARNING: [Opt 31-6] Deleting driverless net: system_i/mb_system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/FPU_I/Use_FPU.ex_Exp_Mant_Equal_2/The_Compare[1].carry_and_I1/carry_7.
+WARNING: [Opt 31-6] Deleting driverless net: system_i/mb_system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/FPU_I/Use_FPU.ex_Exp_Mant_Equal_2/The_Compare[2].carry_and_I1/carry_6.
+WARNING: [Opt 31-6] Deleting driverless net: system_i/mb_system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/FPU_I/Use_FPU.ex_Exp_Mant_Equal_2/The_Compare[3].carry_and_I1/carry_4.
+WARNING: [Opt 31-6] Deleting driverless net: system_i/mb_system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/FPU_I/Use_FPU.ex_Exp_Mant_Equal_2/The_Compare[4].carry_and_I1/carry_3.
+WARNING: [Opt 31-6] Deleting driverless net: system_i/mb_system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/FPU_I/Use_FPU.ex_Exp_Mant_Equal_2/The_Compare[4].carry_and_I1/carry_4.
+WARNING: [Opt 31-6] Deleting driverless net: system_i/mb_system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/FPU_I/Use_FPU.ex_Exp_Mant_Equal_2/The_Compare[5].carry_and_I1/carry_2.
+WARNING: [Opt 31-6] Deleting driverless net: system_i/mb_system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/FPU_I/Use_FPU.ex_Exp_Mant_Equal_2/The_Compare[5].carry_and_I1/carry_3.
+WARNING: [Opt 31-6] Deleting driverless net: system_i/mb_system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/FPU_I/Use_FPU.ex_Exp_Mant_Equal_2/The_Compare[6].carry_and_I1/carry_2.
+WARNING: [Opt 31-6] Deleting driverless net: system_i/mb_system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/FPU_I/Use_FPU.ex_MantA_Zero_2/The_Compare[0].carry_and_I1/carry_5.
+WARNING: [Opt 31-6] Deleting driverless net: system_i/mb_system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/FPU_I/Use_FPU.ex_MantA_Zero_2/The_Compare[1].carry_and_I1/carry_5.
+WARNING: [Opt 31-6] Deleting driverless net: system_i/mb_system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/FPU_I/Use_FPU.ex_MantA_Zero_2/The_Compare[2].carry_and_I1/carry_3.
+WARNING: [Opt 31-6] Deleting driverless net: system_i/mb_system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/FPU_I/Use_FPU.ex_MantA_Zero_2/The_Compare[3].carry_and_I1/carry_2.
+WARNING: [Opt 31-6] Deleting driverless net: system_i/mb_system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/FPU_I/Use_FPU.ex_MantA_Zero_2/The_Compare[3].carry_and_I1/carry_3.
+WARNING: [Opt 31-6] Deleting driverless net: system_i/mb_system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/FPU_I/Use_FPU.ex_MantA_Zero_2/The_Compare[4].carry_and_I1/carry_1.
+WARNING: [Opt 31-6] Deleting driverless net: system_i/mb_system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/FPU_I/Use_FPU.ex_MantA_Zero_2/The_Compare[4].carry_and_I1/carry_2.
+WARNING: [Opt 31-6] Deleting driverless net: system_i/mb_system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/FPU_I/Use_FPU.ex_MantA_Zero_2/The_Compare[5].carry_and_I1/carry_1.
+WARNING: [Opt 31-6] Deleting driverless net: system_i/mb_system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/FPU_I/Use_FPU.ex_MantB_Zero_2/The_Compare[0].carry_and_I1/carry_5.
+WARNING: [Opt 31-6] Deleting driverless net: system_i/mb_system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/FPU_I/Use_FPU.ex_MantB_Zero_2/The_Compare[1].carry_and_I1/carry_5.
+WARNING: [Opt 31-6] Deleting driverless net: system_i/mb_system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/FPU_I/Use_FPU.ex_MantB_Zero_2/The_Compare[2].carry_and_I1/carry_3.
+WARNING: [Opt 31-6] Deleting driverless net: system_i/mb_system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/FPU_I/Use_FPU.ex_MantB_Zero_2/The_Compare[3].carry_and_I1/carry_2.
+WARNING: [Opt 31-6] Deleting driverless net: system_i/mb_system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/FPU_I/Use_FPU.ex_MantB_Zero_2/The_Compare[3].carry_and_I1/carry_3.
+WARNING: [Opt 31-6] Deleting driverless net: system_i/mb_system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/FPU_I/Use_FPU.ex_MantB_Zero_2/The_Compare[4].carry_and_I1/carry_1.
+WARNING: [Opt 31-6] Deleting driverless net: system_i/mb_system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/FPU_I/Use_FPU.ex_MantB_Zero_2/The_Compare[4].carry_and_I1/carry_2.
+WARNING: [Opt 31-6] Deleting driverless net: system_i/mb_system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/FPU_I/Use_FPU.ex_MantB_Zero_2/The_Compare[5].carry_and_I1/carry_1.
+WARNING: [Opt 31-6] Deleting driverless net: system_i/mb_system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PC_Module_I/Use_BTC_2.Using_FPGA.bt_ex_pc_comparator/carry1.
+WARNING: [Opt 31-6] Deleting driverless net: system_i/mb_system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PC_Module_I/Use_BTC_2.Using_FPGA.bt_hit_carry_and/carry1.
+WARNING: [Opt 31-6] Deleting driverless net: system_i/mb_system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PC_Module_I/Use_BTC_2.Using_FPGA.bt_jump_carry_and/carry2.
+WARNING: [Opt 31-6] Deleting driverless net: system_i/mb_system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PC_Module_I/Use_BTC_2.Using_FPGA.bt_jump_carry_or/carry2.
+WARNING: [Opt 31-6] Deleting driverless net: system_i/mb_system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/Use_MuxCy[10].OF_Piperun_Stage/of_PipeRun_carry_2.
+WARNING: [Opt 31-6] Deleting driverless net: system_i/mb_system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/Use_MuxCy[1].OF_Piperun_Stage/of_PipeRun_carry_10.
+WARNING: [Opt 31-6] Deleting driverless net: system_i/mb_system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/Use_MuxCy[2].OF_Piperun_Stage/of_PipeRun_carry_10.
+WARNING: [Opt 31-6] Deleting driverless net: system_i/mb_system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/Use_MuxCy[2].OF_Piperun_Stage/of_PipeRun_carry_9.
+WARNING: [Opt 31-6] Deleting driverless net: system_i/mb_system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/Use_MuxCy[3].OF_Piperun_Stage/of_PipeRun_carry_9.
+WARNING: [Opt 31-6] Deleting driverless net: system_i/mb_system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/Use_MuxCy[4].OF_Piperun_Stage/of_PipeRun_carry_7.
+WARNING: [Opt 31-6] Deleting driverless net: system_i/mb_system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/Use_MuxCy[5].OF_Piperun_Stage/of_PipeRun_carry_6.
+WARNING: [Opt 31-6] Deleting driverless net: system_i/mb_system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/Use_MuxCy[5].OF_Piperun_Stage/of_PipeRun_carry_7.
+WARNING: [Opt 31-6] Deleting driverless net: system_i/mb_system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/Use_MuxCy[6].OF_Piperun_Stage/of_PipeRun_carry_5.
+WARNING: [Opt 31-6] Deleting driverless net: system_i/mb_system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/Use_MuxCy[6].OF_Piperun_Stage/of_PipeRun_carry_6.
+WARNING: [Opt 31-6] Deleting driverless net: system_i/mb_system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/Use_MuxCy[7].OF_Piperun_Stage/of_PipeRun_carry_5.
+WARNING: [Opt 31-6] Deleting driverless net: system_i/mb_system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/Use_MuxCy[8].OF_Piperun_Stage/of_PipeRun_carry_3.
+WARNING: [Opt 31-6] Deleting driverless net: system_i/mb_system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/Use_MuxCy[9].OF_Piperun_Stage/of_PipeRun_carry_2.
+WARNING: [Opt 31-6] Deleting driverless net: system_i/mb_system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/Use_MuxCy[9].OF_Piperun_Stage/of_PipeRun_carry_3.
+WARNING: [Opt 31-6] Deleting driverless net: system_i/mb_system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/Using_ICache_Carry_Chain.ib_addr_strobe_i_carry_or/ib_ready_MMU_or_not_if_fetch_in_progress.
+WARNING: [Opt 31-6] Deleting driverless net: system_i/mb_system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/Using_ICache_Carry_Chain.ib_addr_strobe_ii_carry_and/ib_ready_MMU_or_not_if_fetch_in_progress.
+WARNING: [Opt 31-6] Deleting driverless net: system_i/mb_system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/Using_ICache_Carry_Chain.ib_ready_MMU_carry_or/ib_ready.
+WARNING: [Opt 31-6] Deleting driverless net: system_i/mb_system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/Using_PC_Incr_Dbg_or_Prot.if_pc_incr_carry_and_1/if_pc_incr_carry0.
+WARNING: [Opt 31-6] Deleting driverless net: system_i/mb_system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/Using_PC_Incr_Dbg_or_Prot.if_pc_incr_carry_and_1/if_pc_incr_carry1.
+WARNING: [Opt 31-6] Deleting driverless net: system_i/mb_system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/if_pc_incr_carry_and_0/if_pc_incr_carry0.
+WARNING: [Opt 31-6] Deleting driverless net: system_i/mb_system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/if_pc_incr_carry_and_3/if_pc_incr_carry1.
+WARNING: [Opt 31-6] Deleting driverless net: system_i/mb_system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/mem_PipeRun_carry_and/mem_wait_on_ready_N.
+WARNING: [Opt 31-6] Deleting driverless net: system_i/mb_system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/mem_wait_on_ready_N_carry_or/mem_wait_on_ready_N.
+WARNING: [Opt 31-6] Deleting driverless net: system_i/mb_system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/ib_ready.
+WARNING: [Opt 31-6] Deleting driverless net: system_i/mb_system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/cachehit_detect_I1/WriteThrough_Exists.write_through_gate/tag_hit_3.
+WARNING: [Opt 31-6] Deleting driverless net: system_i/mb_system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/cachehit_detect_I1/cache_valid_bit_detect_I1/Valid_check_with_8word_cacheline.valid_check_cacheline[0].valid_check_carry_and_I/valid_check_carry_2.
+WARNING: [Opt 31-6] Deleting driverless net: system_i/mb_system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/cachehit_detect_I1/cache_valid_bit_detect_I1/Valid_check_with_8word_cacheline.valid_check_cacheline[0].valid_check_carry_and_I/valid_data_normal.
+WARNING: [Opt 31-6] Deleting driverless net: system_i/mb_system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/cachehit_detect_I1/cache_valid_bit_detect_I1/Valid_check_with_8word_cacheline.valid_check_cacheline[1].valid_check_carry_and_I/valid_check_carry_1.
+WARNING: [Opt 31-6] Deleting driverless net: system_i/mb_system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/cachehit_detect_I1/cache_valid_bit_detect_I1/Valid_check_with_8word_cacheline.valid_check_cacheline[1].valid_check_carry_and_I/valid_check_carry_2.
+WARNING: [Opt 31-6] Deleting driverless net: system_i/mb_system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/cachehit_detect_I1/cache_valid_bit_detect_I1/Valid_check_with_8word_cacheline.valid_check_cacheline[2].valid_check_carry_and_I/valid_check_carry_1.
+WARNING: [Opt 31-6] Deleting driverless net: system_i/mb_system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/cachehit_detect_I1/cache_valid_bit_detect_I1/valid_data_normal.
+INFO: [Common 17-14] Message 'Opt 31-6' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Opt 31-12] Eliminated 36185 unconnected nets.
+INFO: [Opt 31-11] Eliminated 8005 unconnected cells.
+Phase 3 Sweep | Checksum: 14f0865bc
+
+Time (s): cpu = 00:00:48 ; elapsed = 00:00:48 . Memory (MB): peak = 2100.234 ; gain = 0.000
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.439 . Memory (MB): peak = 2100.234 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 14f0865bc
+
+Time (s): cpu = 00:00:50 ; elapsed = 00:00:50 . Memory (MB): peak = 2100.234 ; gain = 0.000
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 48 BRAM(s) out of a total of 122 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 50 newly gated: 8 Total Ports: 244
+Ending PowerOpt Patch Enables Task | Checksum: 1a2f07cac
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.505 . Memory (MB): peak = 2961.379 ; gain = 0.000
+Ending Power Optimization Task | Checksum: 1a2f07cac
+
+Time (s): cpu = 00:01:23 ; elapsed = 00:00:43 . Memory (MB): peak = 2961.379 ; gain = 861.145
+INFO: [Common 17-83] Releasing license: Implementation
+30 Infos, 100 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:02:34 ; elapsed = 00:01:46 . Memory (MB): peak = 2961.379 ; gain = 861.145
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.134 . Memory (MB): peak = 2961.379 ; gain = 0.000
+write_checkpoint: Time (s): cpu = 00:00:41 ; elapsed = 00:00:23 . Memory (MB): peak = 2961.379 ; gain = 0.000
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.runs/impl_2/system_top_drc_opted.rpt.
+report_drc: Time (s): cpu = 00:00:19 ; elapsed = 00:00:10 . Memory (MB): peak = 2961.379 ; gain = 0.000
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7vx690t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7vx690t'
+INFO: [Common 17-1223] The version limit for your license is '2015.12' and will expire in -118 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [DRC 23-20] Rule violation (REQP-1725) DSP_Abus_sign_bit_alert - system_i/mb_system_i/mcml_0/inst/grp_mcml_rFresnel_fu_5654/mcml_fadd_32ns_32ns_32_9_full_dsp_U10/mcml_ap_fadd_7_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+INFO: [DRC 23-20] Rule violation (REQP-1725) DSP_Abus_sign_bit_alert - system_i/mb_system_i/mcml_0/inst/grp_mcml_rFresnel_fu_5654/mcml_fadd_32ns_32ns_32_9_full_dsp_U3/mcml_ap_fadd_7_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+INFO: [DRC 23-20] Rule violation (REQP-1725) DSP_Abus_sign_bit_alert - system_i/mb_system_i/mcml_0/inst/grp_mcml_rFresnel_fu_5654/mcml_fadd_32ns_32ns_32_9_full_dsp_U7/mcml_ap_fadd_7_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+INFO: [DRC 23-20] Rule violation (REQP-1725) DSP_Abus_sign_bit_alert - system_i/mb_system_i/mcml_0/inst/grp_mcml_rFresnel_fu_5654/mcml_fadd_32ns_32ns_32_9_full_dsp_U8/mcml_ap_fadd_7_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+INFO: [DRC 23-20] Rule violation (REQP-1725) DSP_Abus_sign_bit_alert - system_i/mb_system_i/mcml_0/inst/grp_mcml_rFresnel_fu_5654/mcml_fsub_32ns_32ns_32_9_full_dsp_U2/mcml_ap_fsub_7_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+INFO: [DRC 23-20] Rule violation (REQP-1725) DSP_Abus_sign_bit_alert - system_i/mb_system_i/mcml_0/inst/grp_mcml_rFresnel_fu_5654/mcml_fsub_32ns_32ns_32_9_full_dsp_U4/mcml_ap_fsub_7_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+INFO: [DRC 23-20] Rule violation (REQP-1725) DSP_Abus_sign_bit_alert - system_i/mb_system_i/mcml_0/inst/grp_mcml_rFresnel_fu_5654/mcml_fsub_32ns_32ns_32_9_full_dsp_U5/mcml_ap_fsub_7_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+INFO: [DRC 23-20] Rule violation (REQP-1725) DSP_Abus_sign_bit_alert - system_i/mb_system_i/mcml_0/inst/grp_mcml_rFresnel_fu_5654/mcml_fsub_32ns_32ns_32_9_full_dsp_U6/mcml_ap_fsub_7_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+INFO: [DRC 23-20] Rule violation (REQP-1725) DSP_Abus_sign_bit_alert - system_i/mb_system_i/mcml_0/inst/grp_mcml_rFresnel_fu_5654/mcml_fsub_32ns_32ns_32_9_full_dsp_U9/mcml_ap_fsub_7_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+INFO: [DRC 23-20] Rule violation (REQP-1725) DSP_Abus_sign_bit_alert - system_i/mb_system_i/mcml_0/inst/mcml_fadd_32ns_32ns_32_9_full_dsp_U46/mcml_ap_fadd_7_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+INFO: [DRC 23-20] Rule violation (REQP-1725) DSP_Abus_sign_bit_alert - system_i/mb_system_i/mcml_0/inst/mcml_fadd_32ns_32ns_32_9_full_dsp_U48/mcml_ap_fadd_7_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+INFO: [DRC 23-20] Rule violation (REQP-1725) DSP_Abus_sign_bit_alert - system_i/mb_system_i/mcml_0/inst/mcml_faddfsub_32ns_32ns_32_9_full_dsp_U44/mcml_ap_faddfsub_7_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+INFO: [DRC 23-20] Rule violation (REQP-1725) DSP_Abus_sign_bit_alert - system_i/mb_system_i/mcml_0/inst/mcml_faddfsub_32ns_32ns_32_9_full_dsp_U45/mcml_ap_faddfsub_7_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+INFO: [DRC 23-20] Rule violation (REQP-1725) DSP_Abus_sign_bit_alert - system_i/mb_system_i/mcml_0/inst/mcml_fsub_32ns_32ns_32_9_full_dsp_U47/mcml_ap_fsub_7_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors, 14 Advisories
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.343 . Memory (MB): peak = 2961.379 ; gain = 0.000
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 1 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.320 . Memory (MB): peak = 2961.379 ; gain = 0.000
+
+Phase 1.1 IO Placement/ Clock Placement/ Build Placer Device
+
+Phase 1.1.1 Pre-Place Cells
+Phase 1.1.1 Pre-Place Cells | Checksum: e03fb458
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 2961.379 ; gain = 0.000
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 1.1.2 IO and Clk Clean Up
+Phase 1.1.2 IO and Clk Clean Up | Checksum: e03fb458
+
+Time (s): cpu = 00:01:03 ; elapsed = 00:00:58 . Memory (MB): peak = 2961.379 ; gain = 0.000
+
+Phase 1.1.3 Implementation Feasibility check On IDelay
+Phase 1.1.3 Implementation Feasibility check On IDelay | Checksum: e03fb458
+
+Time (s): cpu = 00:01:03 ; elapsed = 00:00:59 . Memory (MB): peak = 2961.379 ; gain = 0.000
+
+Phase 1.1.4 Commit IO Placement
+Phase 1.1.4 Commit IO Placement | Checksum: 4befc204
+
+Time (s): cpu = 00:01:03 ; elapsed = 00:00:59 . Memory (MB): peak = 2961.379 ; gain = 0.000
+Phase 1.1 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 51f5902a
+
+Time (s): cpu = 00:01:03 ; elapsed = 00:00:59 . Memory (MB): peak = 2961.379 ; gain = 0.000
+
+Phase 1.2 Build Placer Netlist Model
+
+Phase 1.2.1 Place Init Design
+
+Phase 1.2.1.1 Init Lut Pin Assignment
+Phase 1.2.1.1 Init Lut Pin Assignment | Checksum: 1c8919a7d
+
+Time (s): cpu = 00:01:11 ; elapsed = 00:01:07 . Memory (MB): peak = 2961.379 ; gain = 0.000
+Phase 1.2.1 Place Init Design | Checksum: 1afa64917
+
+Time (s): cpu = 00:01:58 ; elapsed = 00:01:39 . Memory (MB): peak = 2961.379 ; gain = 0.000
+Phase 1.2 Build Placer Netlist Model | Checksum: 1afa64917
+
+Time (s): cpu = 00:01:58 ; elapsed = 00:01:39 . Memory (MB): peak = 2961.379 ; gain = 0.000
+
+Phase 1.3 Constrain Clocks/Macros
+
+Phase 1.3.1 Constrain Global/Regional Clocks
+Phase 1.3.1 Constrain Global/Regional Clocks | Checksum: 1afa64917
+
+Time (s): cpu = 00:01:59 ; elapsed = 00:01:40 . Memory (MB): peak = 2961.379 ; gain = 0.000
+Phase 1.3 Constrain Clocks/Macros | Checksum: 1afa64917
+
+Time (s): cpu = 00:01:59 ; elapsed = 00:01:40 . Memory (MB): peak = 2961.379 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 1afa64917
+
+Time (s): cpu = 00:01:59 ; elapsed = 00:01:40 . Memory (MB): peak = 2961.379 ; gain = 0.000
+
+Phase 2 Global Placement
+Phase 2 Global Placement | Checksum: 164871d9b
+
+Time (s): cpu = 00:04:30 ; elapsed = 00:03:23 . Memory (MB): peak = 2961.379 ; gain = 0.000
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 164871d9b
+
+Time (s): cpu = 00:04:31 ; elapsed = 00:03:23 . Memory (MB): peak = 2961.379 ; gain = 0.000
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 17ea60e1b
+
+Time (s): cpu = 00:05:31 ; elapsed = 00:04:07 . Memory (MB): peak = 2961.379 ; gain = 0.000
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 20f9664c1
+
+Time (s): cpu = 00:05:33 ; elapsed = 00:04:08 . Memory (MB): peak = 2961.379 ; gain = 0.000
+
+Phase 3.4 updateClock Trees: DP
+Phase 3.4 updateClock Trees: DP | Checksum: 20f9664c1
+
+Time (s): cpu = 00:05:33 ; elapsed = 00:04:09 . Memory (MB): peak = 2961.379 ; gain = 0.000
+
+Phase 3.5 Timing Path Optimizer
+Phase 3.5 Timing Path Optimizer | Checksum: 1bd06e32b
+
+Time (s): cpu = 00:05:48 ; elapsed = 00:04:19 . Memory (MB): peak = 2961.379 ; gain = 0.000
+
+Phase 3.6 Fast Optimization
+Phase 3.6 Fast Optimization | Checksum: 20fbe98d7
+
+Time (s): cpu = 00:05:49 ; elapsed = 00:04:20 . Memory (MB): peak = 2961.379 ; gain = 0.000
+
+Phase 3.7 Small Shape Detail Placement
+
+Phase 3.7.1 Commit Small Macros and Core Logic
+
+Phase 3.7.1.1 Commit Slice Clusters
+Phase 3.7.1.1 Commit Slice Clusters | Checksum: 1583e56fd
+
+Time (s): cpu = 00:06:28 ; elapsed = 00:04:58 . Memory (MB): peak = 2961.379 ; gain = 0.000
+Phase 3.7.1 Commit Small Macros and Core Logic | Checksum: 1583e56fd
+
+Time (s): cpu = 00:06:29 ; elapsed = 00:04:59 . Memory (MB): peak = 2961.379 ; gain = 0.000
+
+Phase 3.7.2 Clock Restriction Legalization for Leaf Columns
+Phase 3.7.2 Clock Restriction Legalization for Leaf Columns | Checksum: 1583e56fd
+
+Time (s): cpu = 00:06:31 ; elapsed = 00:05:01 . Memory (MB): peak = 2961.379 ; gain = 0.000
+
+Phase 3.7.3 Clock Restriction Legalization for Non-Clock Pins
+Phase 3.7.3 Clock Restriction Legalization for Non-Clock Pins | Checksum: 1583e56fd
+
+Time (s): cpu = 00:06:32 ; elapsed = 00:05:02 . Memory (MB): peak = 2961.379 ; gain = 0.000
+Phase 3.7 Small Shape Detail Placement | Checksum: 1583e56fd
+
+Time (s): cpu = 00:06:33 ; elapsed = 00:05:03 . Memory (MB): peak = 2961.379 ; gain = 0.000
+
+Phase 3.8 Re-assign LUT pins
+Phase 3.8 Re-assign LUT pins | Checksum: 13fe27e0f
+
+Time (s): cpu = 00:06:38 ; elapsed = 00:05:08 . Memory (MB): peak = 2961.379 ; gain = 0.000
+Phase 3 Detail Placement | Checksum: 13fe27e0f
+
+Time (s): cpu = 00:06:39 ; elapsed = 00:05:09 . Memory (MB): peak = 2961.379 ; gain = 0.000
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+
+Phase 4.1.1 callUpdateTimingBeforePCO
+Phase 4.1.1 callUpdateTimingBeforePCO | Checksum: 22595402f
+
+Time (s): cpu = 00:07:16 ; elapsed = 00:05:30 . Memory (MB): peak = 2961.379 ; gain = 0.000
+
+Phase 4.1.2 updateClock Trees: PCOPT
+Phase 4.1.2 updateClock Trees: PCOPT | Checksum: 22595402f
+
+Time (s): cpu = 00:07:17 ; elapsed = 00:05:31 . Memory (MB): peak = 2961.379 ; gain = 0.000
+
+Phase 4.1.3 Post Placement Optimization
+
+Phase 4.1.3.1 PCOPT Shape updates
+
+Phase 4.1.3.1.1 removeOptionalFFsFromShapes
+Phase 4.1.3.1.1 removeOptionalFFsFromShapes | Checksum: 22595402f
+
+Time (s): cpu = 00:07:18 ; elapsed = 00:05:32 . Memory (MB): peak = 2961.379 ; gain = 0.000
+
+Phase 4.1.3.1.2 deleteLutnmShapes
+
+Phase 4.1.3.1.2.1 deleteShapes
+Phase 4.1.3.1.2.1 deleteShapes | Checksum: 14bb68236
+
+Time (s): cpu = 00:07:19 ; elapsed = 00:05:33 . Memory (MB): peak = 2961.379 ; gain = 0.000
+Phase 4.1.3.1.2 deleteLutnmShapes | Checksum: 14bb68236
+
+Time (s): cpu = 00:07:20 ; elapsed = 00:05:34 . Memory (MB): peak = 2961.379 ; gain = 0.000
+Phase 4.1.3.1 PCOPT Shape updates | Checksum: 14bb68236
+
+Time (s): cpu = 00:07:21 ; elapsed = 00:05:35 . Memory (MB): peak = 2961.379 ; gain = 0.000
+
+Phase 4.1.3.2 Post Placement Timing Optimization
+
+Phase 4.1.3.2.1 Restore Best Placement
+Phase 4.1.3.2.1 Restore Best Placement | Checksum: 59a102fc
+
+Time (s): cpu = 00:07:26 ; elapsed = 00:05:40 . Memory (MB): peak = 2961.379 ; gain = 0.000
+INFO: [Place 30-746] Post Placement Timing Summary WNS=0.500. For the most accurate timing information please run report_timing.
+Phase 4.1.3.2 Post Placement Timing Optimization | Checksum: 59a102fc
+
+Time (s): cpu = 00:07:27 ; elapsed = 00:05:41 . Memory (MB): peak = 2961.379 ; gain = 0.000
+Phase 4.1.3 Post Placement Optimization | Checksum: 59a102fc
+
+Time (s): cpu = 00:07:28 ; elapsed = 00:05:42 . Memory (MB): peak = 2961.379 ; gain = 0.000
+Phase 4.1 Post Commit Optimization | Checksum: 59a102fc
+
+Time (s): cpu = 00:07:29 ; elapsed = 00:05:43 . Memory (MB): peak = 2961.379 ; gain = 0.000
+
+Phase 4.2 Sweep Clock Roots: Post-Placement
+Phase 4.2 Sweep Clock Roots: Post-Placement | Checksum: 59a102fc
+
+Time (s): cpu = 00:07:30 ; elapsed = 00:05:44 . Memory (MB): peak = 2961.379 ; gain = 0.000
+
+Phase 4.3 Post Placement Cleanup
+Phase 4.3 Post Placement Cleanup | Checksum: 59a102fc
+
+Time (s): cpu = 00:07:31 ; elapsed = 00:05:45 . Memory (MB): peak = 2961.379 ; gain = 0.000
+
+Phase 4.4 Placer Reporting
+
+Phase 4.4.1 Restore STA
+Phase 4.4.1 Restore STA | Checksum: 59a102fc
+
+Time (s): cpu = 00:07:32 ; elapsed = 00:05:46 . Memory (MB): peak = 2961.379 ; gain = 0.000
+Phase 4.4 Placer Reporting | Checksum: 59a102fc
+
+Time (s): cpu = 00:07:33 ; elapsed = 00:05:47 . Memory (MB): peak = 2961.379 ; gain = 0.000
+
+Phase 4.5 Final Placement Cleanup
+Phase 4.5 Final Placement Cleanup | Checksum: aa3c1a0a
+
+Time (s): cpu = 00:07:34 ; elapsed = 00:05:48 . Memory (MB): peak = 2961.379 ; gain = 0.000
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: aa3c1a0a
+
+Time (s): cpu = 00:07:35 ; elapsed = 00:05:49 . Memory (MB): peak = 2961.379 ; gain = 0.000
+Ending Placer Task | Checksum: a0565436
+
+Time (s): cpu = 00:07:35 ; elapsed = 00:05:49 . Memory (MB): peak = 2961.379 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+60 Infos, 100 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:07:50 ; elapsed = 00:05:59 . Memory (MB): peak = 2961.379 ; gain = 0.000
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:38 ; elapsed = 00:00:13 . Memory (MB): peak = 2961.379 ; gain = 0.000
+write_checkpoint: Time (s): cpu = 00:00:56 ; elapsed = 00:00:25 . Memory (MB): peak = 2961.379 ; gain = 0.000
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.204 . Memory (MB): peak = 2961.379 ; gain = 0.000
+report_utilization: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2961.379 ; gain = 0.000
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.333 . Memory (MB): peak = 2961.379 ; gain = 0.000
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7vx690t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7vx690t'
+INFO: [Common 17-1223] The version limit for your license is '2015.12' and will expire in -118 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+Checksum: PlaceDB: 167b07ca ConstDB: 0 ShapeSum: 89db4c6c RouteDB: 0
+
+Phase 1 Build RT Design
+Using Offlined NodeGraph Builder
+Phase 1 Build RT Design | Checksum: 565a0068
+
+Time (s): cpu = 00:01:58 ; elapsed = 00:00:59 . Memory (MB): peak = 2961.379 ; gain = 0.000
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: 565a0068
+
+Time (s): cpu = 00:02:01 ; elapsed = 00:01:02 . Memory (MB): peak = 2961.379 ; gain = 0.000
+
+Phase 2.2 Pre Route Cleanup
+Phase 2.2 Pre Route Cleanup | Checksum: 565a0068
+
+Time (s): cpu = 00:02:02 ; elapsed = 00:01:03 . Memory (MB): peak = 2961.379 ; gain = 0.000
+ Number of Nodes with overlaps = 0
+
+Phase 2.3 Update Timing
+Phase 2.3 Update Timing | Checksum: b96a88d4
+
+Time (s): cpu = 00:03:08 ; elapsed = 00:01:45 . Memory (MB): peak = 3010.254 ; gain = 48.875
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.601  | TNS=0.000  | WHS=-0.376 | THS=-4452.423|
+
+Phase 2 Router Initialization | Checksum: 13bed9a5d
+
+Time (s): cpu = 00:03:36 ; elapsed = 00:02:03 . Memory (MB): peak = 3156.977 ; gain = 195.598
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: edbc91fd
+
+Time (s): cpu = 00:04:19 ; elapsed = 00:02:28 . Memory (MB): peak = 3156.977 ; gain = 195.598
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 12234
+ Number of Nodes with overlaps = 1422
+ Number of Nodes with overlaps = 304
+ Number of Nodes with overlaps = 101
+ Number of Nodes with overlaps = 28
+ Number of Nodes with overlaps = 6
+ Number of Nodes with overlaps = 0
+
+Phase 4.1.1 Update Timing
+Phase 4.1.1 Update Timing | Checksum: ed9026c9
+
+Time (s): cpu = 00:06:07 ; elapsed = 00:03:36 . Memory (MB): peak = 3156.977 ; gain = 195.598
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.151 | TNS=-0.151 | WHS=N/A    | THS=N/A    |
+
+
+Phase 4.1.2 GlobIterForTiming
+
+Phase 4.1.2.1 Update Timing
+Phase 4.1.2.1 Update Timing | Checksum: 22ee821a6
+
+Time (s): cpu = 00:06:10 ; elapsed = 00:03:38 . Memory (MB): peak = 3156.977 ; gain = 195.598
+
+Phase 4.1.2.2 Fast Budgeting
+Phase 4.1.2.2 Fast Budgeting | Checksum: 24fe393ae
+
+Time (s): cpu = 00:06:19 ; elapsed = 00:03:47 . Memory (MB): peak = 3156.977 ; gain = 195.598
+Phase 4.1.2 GlobIterForTiming | Checksum: 10d049fc5
+
+Time (s): cpu = 00:06:21 ; elapsed = 00:03:49 . Memory (MB): peak = 3156.977 ; gain = 195.598
+Phase 4.1 Global Iteration 0 | Checksum: 10d049fc5
+
+Time (s): cpu = 00:06:21 ; elapsed = 00:03:49 . Memory (MB): peak = 3156.977 ; gain = 195.598
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 1258
+ Number of Nodes with overlaps = 547
+ Number of Nodes with overlaps = 163
+ Number of Nodes with overlaps = 56
+ Number of Nodes with overlaps = 12
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 0
+
+Phase 4.2.1 Update Timing
+Phase 4.2.1 Update Timing | Checksum: 1ebf19c34
+
+Time (s): cpu = 00:07:00 ; elapsed = 00:04:26 . Memory (MB): peak = 3156.977 ; gain = 195.598
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.418 | TNS=-0.542 | WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: 1b1285e00
+
+Time (s): cpu = 00:07:01 ; elapsed = 00:04:27 . Memory (MB): peak = 3156.977 ; gain = 195.598
+Phase 4 Rip-up And Reroute | Checksum: 1b1285e00
+
+Time (s): cpu = 00:07:01 ; elapsed = 00:04:27 . Memory (MB): peak = 3156.977 ; gain = 195.598
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+
+Phase 5.1.1 Update Timing
+Phase 5.1.1 Update Timing | Checksum: 1ed13cc27
+
+Time (s): cpu = 00:07:09 ; elapsed = 00:04:32 . Memory (MB): peak = 3156.977 ; gain = 195.598
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.151 | TNS=-0.151 | WHS=N/A    | THS=N/A    |
+
+ Number of Nodes with overlaps = 0
+Phase 5.1 Delay CleanUp | Checksum: 128211e7d
+
+Time (s): cpu = 00:07:11 ; elapsed = 00:04:33 . Memory (MB): peak = 3156.977 ; gain = 195.598
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 128211e7d
+
+Time (s): cpu = 00:07:12 ; elapsed = 00:04:33 . Memory (MB): peak = 3156.977 ; gain = 195.598
+Phase 5 Delay and Skew Optimization | Checksum: 128211e7d
+
+Time (s): cpu = 00:07:12 ; elapsed = 00:04:34 . Memory (MB): peak = 3156.977 ; gain = 195.598
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Update Timing
+Phase 6.1 Update Timing | Checksum: 153554e5a
+
+Time (s): cpu = 00:07:22 ; elapsed = 00:04:40 . Memory (MB): peak = 3156.977 ; gain = 195.598
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.030 | TNS=-0.030 | WHS=0.039  | THS=0.000  |
+
+Phase 6 Post Hold Fix | Checksum: 14c246e42
+
+Time (s): cpu = 00:07:22 ; elapsed = 00:04:40 . Memory (MB): peak = 3156.977 ; gain = 195.598
+WARNING: [Route 35-446] The router encountered 2 pins that are both setup-critical and hold-critical and tried to fix hold violations at the expense of setup slack.
+Resolution: Run report_timing on the design before routing to identify timing paths with higher hold violations and low or negative setup margin.
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 3.26812 %
+  Global Horizontal Routing Utilization  = 4.44518 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Congestion Report
+North Dir 1x1 Area, Max Cong = 83.7838%, No Congested Regions.
+South Dir 1x1 Area, Max Cong = 78.3784%, No Congested Regions.
+East Dir 1x1 Area, Max Cong = 91.1765%, Congestion bounded by tiles (Lower Left Tile -> Upper Right Tile):
+   INT_R_X63Y202 -> INT_R_X63Y202
+   INT_L_X52Y199 -> INT_L_X52Y199
+West Dir 1x1 Area, Max Cong = 95.5882%, Congestion bounded by tiles (Lower Left Tile -> Upper Right Tile):
+   INT_L_X110Y253 -> INT_L_X110Y253
+   INT_R_X65Y211 -> INT_R_X65Y211
+   INT_R_X51Y208 -> INT_R_X51Y208
+   INT_R_X65Y204 -> INT_R_X65Y204
+   INT_L_X48Y203 -> INT_L_X48Y203
+Phase 7 Route finalize | Checksum: 1550c33b1
+
+Time (s): cpu = 00:07:24 ; elapsed = 00:04:41 . Memory (MB): peak = 3156.977 ; gain = 195.598
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 1550c33b1
+
+Time (s): cpu = 00:07:24 ; elapsed = 00:04:42 . Memory (MB): peak = 3156.977 ; gain = 195.598
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 159137fa4
+
+Time (s): cpu = 00:07:34 ; elapsed = 00:04:52 . Memory (MB): peak = 3156.977 ; gain = 195.598
+
+Phase 10 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-0.030 | TNS=-0.030 | WHS=0.039  | THS=0.000  |
+
+WARNING: [Route 35-328] Router estimated timing not met.
+Resolution: For a complete and accurate timing signoff, report_timing_summary must be run after route_design. Alternatively, route_design can be run with the -timing_summary option to enable a complete timing signoff at the end of route_design.
+Phase 10 Post Router Timing | Checksum: 159137fa4
+
+Time (s): cpu = 00:07:35 ; elapsed = 00:04:53 . Memory (MB): peak = 3156.977 ; gain = 195.598
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:07:35 ; elapsed = 00:04:53 . Memory (MB): peak = 3156.977 ; gain = 195.598
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+74 Infos, 102 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:07:48 ; elapsed = 00:05:01 . Memory (MB): peak = 3156.977 ; gain = 195.598
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:01:01 ; elapsed = 00:00:22 . Memory (MB): peak = 3156.977 ; gain = 0.000
+write_checkpoint: Time (s): cpu = 00:01:06 ; elapsed = 00:00:27 . Memory (MB): peak = 3156.977 ; gain = 0.000
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.runs/impl_2/system_top_drc_routed.rpt.
+report_drc: Time (s): cpu = 00:00:35 ; elapsed = 00:00:23 . Memory (MB): peak = 3156.977 ; gain = 0.000
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -3, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+report_timing_summary: Time (s): cpu = 00:01:00 ; elapsed = 00:00:34 . Memory (MB): peak = 3156.977 ; gain = 0.000
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+report_power: Time (s): cpu = 00:00:41 ; elapsed = 00:00:31 . Memory (MB): peak = 3171.391 ; gain = 14.414
+INFO: [Common 17-206] Exiting Vivado at Wed Apr 27 19:52:04 2016...

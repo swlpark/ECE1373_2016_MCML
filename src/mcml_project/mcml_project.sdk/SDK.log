@@ -1,0 +1,1758 @@
+10:33:01 INFO  : Launching XSDB server: xsdb.bat C:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+10:33:03 INFO  : XSDB server has started successfully.
+10:33:04 INFO  : Processing command line option -hwspec C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/system_top.hdf.
+10:41:13 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:42:08 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A" && level==0} -index 0' command is executed.
+10:42:08 INFO  : 'fpga -state' command is executed.
+10:42:08 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:42:08 INFO  : Context for processor 'microblaze_0' is selected.
+10:42:08 INFO  : Hardware design information is loaded from 'C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/system_top_hw_platform_0/system.hdf'.
+10:42:09 INFO  : Context for processor 'microblaze_0' is selected.
+10:42:09 INFO  : Processor reset is completed for 'microblaze_0'.
+10:42:09 INFO  : Context for processor 'microblaze_0' is selected.
+10:42:10 INFO  : The application 'C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/mmcl_mb/Debug/mmcl_mb.elf' is downloaded to processor 'microblaze_0'.
+10:42:10 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+loadhw C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/system_top_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+dow C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/mmcl_mb/Debug/mmcl_mb.elf
+----------------End of Script----------------
+
+10:42:10 INFO  : Memory regions updated for context MicroBlaze #0
+10:42:10 INFO  : Context for processor 'microblaze_0' is selected.
+10:42:10 INFO  : 'con' command is executed.
+10:42:10 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+con
+----------------End of Script----------------
+
+10:42:13 INFO  : Disconnected from the channel tcfchan#1.
+10:42:13 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A" && level==0} -index 0' command is executed.
+10:42:13 INFO  : 'fpga -state' command is executed.
+10:42:13 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:42:14 INFO  : Context for processor 'microblaze_0' is selected.
+10:42:14 INFO  : Hardware design information is loaded from 'C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/system_top_hw_platform_0/system.hdf'.
+10:42:14 INFO  : Context for processor 'microblaze_0' is selected.
+10:42:14 INFO  : Processor reset is completed for 'microblaze_0'.
+10:42:14 INFO  : Context for processor 'microblaze_0' is selected.
+10:42:15 INFO  : The application 'C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/mmcl_mb/Debug/mmcl_mb.elf' is downloaded to processor 'microblaze_0'.
+10:42:15 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+loadhw C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/system_top_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+dow C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/mmcl_mb/Debug/mmcl_mb.elf
+----------------End of Script----------------
+
+10:42:15 INFO  : Memory regions updated for context MicroBlaze #0
+10:42:15 INFO  : Context for processor 'microblaze_0' is selected.
+10:42:15 INFO  : 'con' command is executed.
+10:42:15 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+con
+----------------End of Script----------------
+
+10:42:54 INFO  : Disconnected from the channel tcfchan#2.
+10:42:55 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A" && level==0} -index 0' command is executed.
+10:42:55 INFO  : 'fpga -state' command is executed.
+10:42:55 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:42:56 INFO  : Context for processor 'microblaze_0' is selected.
+10:42:56 INFO  : Hardware design information is loaded from 'C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/system_top_hw_platform_0/system.hdf'.
+10:42:56 INFO  : Context for processor 'microblaze_0' is selected.
+10:42:56 INFO  : Processor reset is completed for 'microblaze_0'.
+10:42:56 INFO  : Context for processor 'microblaze_0' is selected.
+10:42:57 INFO  : The application 'C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/mmcl_mb/Debug/mmcl_mb.elf' is downloaded to processor 'microblaze_0'.
+10:42:57 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+loadhw C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/system_top_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+dow C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/mmcl_mb/Debug/mmcl_mb.elf
+----------------End of Script----------------
+
+10:42:57 INFO  : Memory regions updated for context MicroBlaze #0
+10:42:57 INFO  : Context for processor 'microblaze_0' is selected.
+10:42:57 INFO  : 'con' command is executed.
+10:42:57 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+con
+----------------End of Script----------------
+
+10:43:07 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:43:22 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:43:22 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A" && level==0} -index 0' command is executed.
+10:43:22 ERROR : couldn't open "C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/system_top_hw_platform_0/download.bit": no such file or directory
+10:50:51 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A" && level==0} -index 0' command is executed.
+10:50:51 INFO  : 'fpga -state' command is executed.
+10:50:51 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:50:52 INFO  : Context for processor 'microblaze_0' is selected.
+10:50:52 INFO  : Hardware design information is loaded from 'C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/system_top_hw_platform_0/system.hdf'.
+10:50:52 INFO  : Context for processor 'microblaze_0' is selected.
+10:50:52 INFO  : Processor reset is completed for 'microblaze_0'.
+10:50:52 INFO  : Context for processor 'microblaze_0' is selected.
+10:50:53 INFO  : The application 'C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/main/Debug/main.elf' is downloaded to processor 'microblaze_0'.
+10:50:53 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+loadhw C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/system_top_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+dow C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/main/Debug/main.elf
+----------------End of Script----------------
+
+10:50:53 INFO  : Memory regions updated for context MicroBlaze #0
+10:50:53 INFO  : Context for processor 'microblaze_0' is selected.
+10:50:53 INFO  : 'con' command is executed.
+10:50:53 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+con
+----------------End of Script----------------
+
+10:53:31 INFO  : Inferring section assignments and sizes from elf file: C:\Users\lawpark\Documents\hls_project\mcml_project\mcml_project.sdk\main\Debug\main.elf
+10:53:56 INFO  : Successfully generated C:\Users\lawpark\Documents\hls_project\mcml_project\mcml_project.sdk\main\src\lscript.ld.
+10:53:56 INFO  : Applying linker script to all configurations of project main.
+10:53:56 INFO  : Setting rebuild state to true for all configurations of project main.
+10:56:13 INFO  : Disconnected from the channel tcfchan#3.
+10:56:14 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A" && level==0} -index 0' command is executed.
+10:56:14 INFO  : 'fpga -state' command is executed.
+10:56:14 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:56:14 INFO  : Context for processor 'microblaze_0' is selected.
+10:56:14 INFO  : Hardware design information is loaded from 'C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/system_top_hw_platform_0/system.hdf'.
+10:56:15 INFO  : Context for processor 'microblaze_0' is selected.
+10:56:15 INFO  : Processor reset is completed for 'microblaze_0'.
+10:56:15 INFO  : Context for processor 'microblaze_0' is selected.
+10:56:15 INFO  : The application 'C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/main/Debug/main.elf' is downloaded to processor 'microblaze_0'.
+10:56:15 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+loadhw C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/system_top_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+dow C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/main/Debug/main.elf
+----------------End of Script----------------
+
+10:56:15 INFO  : Memory regions updated for context MicroBlaze #0
+10:56:15 INFO  : Context for processor 'microblaze_0' is selected.
+10:56:15 INFO  : 'con' command is executed.
+10:56:15 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+con
+----------------End of Script----------------
+
+10:57:35 INFO  : Disconnected from the channel tcfchan#4.
+10:57:36 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A" && level==0} -index 0' command is executed.
+10:57:36 INFO  : 'fpga -state' command is executed.
+10:57:36 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:57:36 INFO  : Context for processor 'microblaze_0' is selected.
+10:57:36 INFO  : Hardware design information is loaded from 'C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/system_top_hw_platform_0/system.hdf'.
+10:57:37 INFO  : Context for processor 'microblaze_0' is selected.
+10:57:37 INFO  : Processor reset is completed for 'microblaze_0'.
+10:57:37 INFO  : Context for processor 'microblaze_0' is selected.
+10:57:38 INFO  : The application 'C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/main/Debug/main.elf' is downloaded to processor 'microblaze_0'.
+10:57:38 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+loadhw C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/system_top_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+dow C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/main/Debug/main.elf
+----------------End of Script----------------
+
+10:57:38 INFO  : Memory regions updated for context MicroBlaze #0
+10:57:38 INFO  : Context for processor 'microblaze_0' is selected.
+10:57:38 INFO  : 'con' command is executed.
+10:57:38 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+con
+----------------End of Script----------------
+
+10:58:40 INFO  : Disconnected from the channel tcfchan#5.
+10:58:41 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A" && level==0} -index 0' command is executed.
+10:58:41 INFO  : 'fpga -state' command is executed.
+10:58:41 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:58:41 INFO  : Context for processor 'microblaze_0' is selected.
+10:58:42 INFO  : Hardware design information is loaded from 'C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/system_top_hw_platform_0/system.hdf'.
+10:58:42 INFO  : Context for processor 'microblaze_0' is selected.
+10:58:42 INFO  : Processor reset is completed for 'microblaze_0'.
+10:58:42 INFO  : Context for processor 'microblaze_0' is selected.
+10:58:43 INFO  : The application 'C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/main/Debug/main.elf' is downloaded to processor 'microblaze_0'.
+10:58:43 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+loadhw C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/system_top_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+dow C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/main/Debug/main.elf
+----------------End of Script----------------
+
+10:58:43 INFO  : Memory regions updated for context MicroBlaze #0
+10:58:43 INFO  : Context for processor 'microblaze_0' is selected.
+10:58:43 INFO  : 'con' command is executed.
+10:58:43 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+con
+----------------End of Script----------------
+
+11:10:46 INFO  : Disconnected from the channel tcfchan#6.
+11:10:47 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A" && level==0} -index 0' command is executed.
+11:10:47 INFO  : 'fpga -state' command is executed.
+11:10:47 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:10:47 INFO  : Context for processor 'microblaze_0' is selected.
+11:10:48 INFO  : Hardware design information is loaded from 'C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/system_top_hw_platform_0/system.hdf'.
+11:10:48 INFO  : Context for processor 'microblaze_0' is selected.
+11:10:48 INFO  : Processor reset is completed for 'microblaze_0'.
+11:10:48 INFO  : Context for processor 'microblaze_0' is selected.
+11:10:48 INFO  : The application 'C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/main/Debug/main.elf' is downloaded to processor 'microblaze_0'.
+11:10:48 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+loadhw C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/system_top_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+dow C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/main/Debug/main.elf
+----------------End of Script----------------
+
+11:10:48 INFO  : Memory regions updated for context MicroBlaze #0
+11:10:49 INFO  : Context for processor 'microblaze_0' is selected.
+11:10:49 INFO  : 'con' command is executed.
+11:10:49 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+con
+----------------End of Script----------------
+
+12:41:57 INFO  : Disconnected from the channel tcfchan#7.
+12:41:57 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A" && level==0} -index 0' command is executed.
+12:41:58 INFO  : 'fpga -state' command is executed.
+12:41:58 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:41:58 INFO  : Context for processor 'microblaze_0' is selected.
+12:41:58 INFO  : Hardware design information is loaded from 'C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/system_top_hw_platform_0/system.hdf'.
+12:41:58 INFO  : Context for processor 'microblaze_0' is selected.
+12:41:59 ERROR : Cannot stop MicroBlaze. Stalled on instruction fetch
+12:41:59 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+loadhw C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/system_top_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+rst -processor
+----------------End of Script----------------
+
+12:42:07 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A" && level==0} -index 0' command is executed.
+12:42:07 INFO  : 'fpga -state' command is executed.
+12:42:07 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:42:08 INFO  : Context for processor 'microblaze_0' is selected.
+12:42:08 INFO  : Hardware design information is loaded from 'C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/system_top_hw_platform_0/system.hdf'.
+12:42:08 INFO  : Context for processor 'microblaze_0' is selected.
+12:42:08 ERROR : Cannot stop MicroBlaze. Stalled on instruction fetch
+12:42:08 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+loadhw C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/system_top_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+rst -processor
+----------------End of Script----------------
+
+12:42:25 WARN  : channel "tcfchan#3" closed
+12:42:31 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A" && level==0} -index 0' command is executed.
+12:42:31 INFO  : 'fpga -state' command is executed.
+12:42:31 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:42:32 INFO  : Context for processor 'microblaze_0' is selected.
+12:42:32 INFO  : Hardware design information is loaded from 'C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/system_top_hw_platform_0/system.hdf'.
+12:42:32 INFO  : Context for processor 'microblaze_0' is selected.
+12:42:32 ERROR : Cannot stop MicroBlaze. Stalled on instruction fetch
+12:42:32 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+loadhw C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/system_top_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+rst -processor
+----------------End of Script----------------
+
+12:43:41 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A" && level==0} -index 0' command is executed.
+12:43:41 INFO  : 'fpga -state' command is executed.
+12:43:41 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:43:42 INFO  : Context for processor 'microblaze_0' is selected.
+12:43:42 INFO  : Hardware design information is loaded from 'C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/system_top_hw_platform_0/system.hdf'.
+12:43:42 INFO  : Context for processor 'microblaze_0' is selected.
+12:43:43 INFO  : Processor reset is completed for 'microblaze_0'.
+12:43:43 INFO  : Context for processor 'microblaze_0' is selected.
+12:43:43 INFO  : The application 'C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/main/Debug/main.elf' is downloaded to processor 'microblaze_0'.
+12:43:43 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+loadhw C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/system_top_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+dow C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/main/Debug/main.elf
+----------------End of Script----------------
+
+12:43:43 INFO  : Memory regions updated for context MicroBlaze #0
+12:43:43 INFO  : Context for processor 'microblaze_0' is selected.
+12:43:43 INFO  : 'con' command is executed.
+12:43:43 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+con
+----------------End of Script----------------
+
+12:47:23 INFO  : Disconnected from the channel tcfchan#8.
+12:47:23 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A" && level==0} -index 0' command is executed.
+12:47:24 INFO  : 'fpga -state' command is executed.
+12:47:24 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:47:24 INFO  : Context for processor 'microblaze_0' is selected.
+12:47:24 INFO  : Hardware design information is loaded from 'C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/system_top_hw_platform_0/system.hdf'.
+12:47:24 INFO  : Context for processor 'microblaze_0' is selected.
+12:47:25 INFO  : Processor reset is completed for 'microblaze_0'.
+12:47:25 INFO  : Context for processor 'microblaze_0' is selected.
+12:47:25 INFO  : The application 'C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/main/Debug/main.elf' is downloaded to processor 'microblaze_0'.
+12:47:25 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+loadhw C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/system_top_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+dow C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/main/Debug/main.elf
+----------------End of Script----------------
+
+12:47:25 INFO  : Memory regions updated for context MicroBlaze #0
+12:47:25 INFO  : Context for processor 'microblaze_0' is selected.
+12:47:26 INFO  : 'con' command is executed.
+12:47:26 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+con
+----------------End of Script----------------
+
+13:14:43 INFO  : Example project standalone_bsp_0_xgpio_intr_example_1 has been created successfully.
+13:40:22 INFO  : Disconnected from the channel tcfchan#9.
+15:19:00 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A" && level==0} -index 0' command is executed.
+15:19:00 INFO  : 'fpga -state' command is executed.
+15:19:21 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:19:21 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A" && level==0} -index 0' command is executed.
+15:19:21 ERROR : couldn't open "C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/system_top_hw_platform_0/download.bit": no such file or directory
+15:21:12 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A" && level==0} -index 0' command is executed.
+15:21:12 INFO  : 'fpga -state' command is executed.
+15:21:12 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:21:13 INFO  : Context for processor 'microblaze_0' is selected.
+15:21:13 INFO  : Hardware design information is loaded from 'C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/system_top_hw_platform_0/system.hdf'.
+15:21:13 INFO  : Context for processor 'microblaze_0' is selected.
+15:21:13 INFO  : Processor reset is completed for 'microblaze_0'.
+15:21:14 INFO  : Context for processor 'microblaze_0' is selected.
+15:21:14 INFO  : The application 'C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/main/Debug/main.elf' is downloaded to processor 'microblaze_0'.
+15:21:14 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+loadhw C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/system_top_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+dow C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/main/Debug/main.elf
+----------------End of Script----------------
+
+15:21:14 INFO  : Memory regions updated for context MicroBlaze #0
+15:21:14 INFO  : Context for processor 'microblaze_0' is selected.
+15:21:14 INFO  : 'con' command is executed.
+15:21:14 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+con
+----------------End of Script----------------
+
+15:21:34 INFO  : Disconnected from the channel tcfchan#10.
+15:21:35 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A" && level==0} -index 0' command is executed.
+15:21:35 INFO  : 'fpga -state' command is executed.
+15:21:35 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:21:35 INFO  : Context for processor 'microblaze_0' is selected.
+15:21:35 INFO  : Hardware design information is loaded from 'C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/system_top_hw_platform_0/system.hdf'.
+15:21:36 INFO  : Context for processor 'microblaze_0' is selected.
+15:21:36 INFO  : Processor reset is completed for 'microblaze_0'.
+15:21:36 INFO  : Context for processor 'microblaze_0' is selected.
+15:21:36 INFO  : The application 'C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/main/Debug/main.elf' is downloaded to processor 'microblaze_0'.
+15:21:36 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+loadhw C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/system_top_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+dow C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/main/Debug/main.elf
+----------------End of Script----------------
+
+15:21:37 INFO  : Memory regions updated for context MicroBlaze #0
+15:21:37 INFO  : Context for processor 'microblaze_0' is selected.
+15:21:37 INFO  : 'con' command is executed.
+15:21:37 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+con
+----------------End of Script----------------
+
+15:24:32 INFO  : Disconnected from the channel tcfchan#11.
+15:24:32 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A" && level==0} -index 0' command is executed.
+15:24:32 INFO  : 'fpga -state' command is executed.
+15:24:32 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:24:33 INFO  : Context for processor 'microblaze_0' is selected.
+15:24:33 INFO  : Hardware design information is loaded from 'C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/system_top_hw_platform_0/system.hdf'.
+15:24:33 INFO  : Context for processor 'microblaze_0' is selected.
+15:24:33 INFO  : Processor reset is completed for 'microblaze_0'.
+15:24:34 INFO  : Context for processor 'microblaze_0' is selected.
+15:24:34 INFO  : The application 'C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/main/Debug/main.elf' is downloaded to processor 'microblaze_0'.
+15:24:34 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+loadhw C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/system_top_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+dow C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/main/Debug/main.elf
+----------------End of Script----------------
+
+15:24:34 INFO  : Memory regions updated for context MicroBlaze #0
+15:24:34 INFO  : Context for processor 'microblaze_0' is selected.
+15:24:34 INFO  : 'con' command is executed.
+15:24:34 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+con
+----------------End of Script----------------
+
+15:26:26 INFO  : Disconnected from the channel tcfchan#12.
+15:26:26 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A" && level==0} -index 0' command is executed.
+15:26:26 INFO  : 'fpga -state' command is executed.
+15:26:26 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:26:27 INFO  : Context for processor 'microblaze_0' is selected.
+15:26:27 INFO  : Hardware design information is loaded from 'C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/system_top_hw_platform_0/system.hdf'.
+15:26:27 INFO  : Context for processor 'microblaze_0' is selected.
+15:26:27 INFO  : Processor reset is completed for 'microblaze_0'.
+15:26:27 INFO  : Context for processor 'microblaze_0' is selected.
+15:26:28 INFO  : The application 'C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/main/Debug/main.elf' is downloaded to processor 'microblaze_0'.
+15:26:28 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+loadhw C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/system_top_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+dow C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/main/Debug/main.elf
+----------------End of Script----------------
+
+15:26:28 INFO  : Memory regions updated for context MicroBlaze #0
+15:26:28 INFO  : Context for processor 'microblaze_0' is selected.
+15:26:28 INFO  : 'con' command is executed.
+15:26:28 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+con
+----------------End of Script----------------
+
+15:26:46 INFO  : Disconnected from the channel tcfchan#13.
+15:26:46 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A" && level==0} -index 0' command is executed.
+15:26:47 INFO  : 'fpga -state' command is executed.
+15:26:47 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:26:47 INFO  : Context for processor 'microblaze_0' is selected.
+15:26:47 INFO  : Hardware design information is loaded from 'C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/system_top_hw_platform_0/system.hdf'.
+15:26:47 INFO  : Context for processor 'microblaze_0' is selected.
+15:26:48 INFO  : Processor reset is completed for 'microblaze_0'.
+15:26:48 INFO  : Context for processor 'microblaze_0' is selected.
+15:26:48 INFO  : The application 'C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/main/Debug/main.elf' is downloaded to processor 'microblaze_0'.
+15:26:48 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+loadhw C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/system_top_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+dow C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/main/Debug/main.elf
+----------------End of Script----------------
+
+15:26:48 INFO  : Memory regions updated for context MicroBlaze #0
+15:26:48 INFO  : Context for processor 'microblaze_0' is selected.
+15:26:48 INFO  : 'con' command is executed.
+15:26:48 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+con
+----------------End of Script----------------
+
+15:29:31 INFO  : Disconnected from the channel tcfchan#14.
+15:29:31 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A" && level==0} -index 0' command is executed.
+15:29:31 INFO  : 'fpga -state' command is executed.
+15:29:32 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:29:32 INFO  : Context for processor 'microblaze_0' is selected.
+15:29:32 INFO  : Hardware design information is loaded from 'C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/system_top_hw_platform_0/system.hdf'.
+15:29:32 INFO  : Context for processor 'microblaze_0' is selected.
+15:29:32 INFO  : Processor reset is completed for 'microblaze_0'.
+15:29:33 INFO  : Context for processor 'microblaze_0' is selected.
+15:29:33 INFO  : The application 'C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/main/Debug/main.elf' is downloaded to processor 'microblaze_0'.
+15:29:33 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+loadhw C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/system_top_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+dow C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/main/Debug/main.elf
+----------------End of Script----------------
+
+15:29:33 INFO  : Memory regions updated for context MicroBlaze #0
+15:29:33 INFO  : Context for processor 'microblaze_0' is selected.
+15:29:33 INFO  : 'con' command is executed.
+15:29:33 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+con
+----------------End of Script----------------
+
+15:30:44 INFO  : Disconnected from the channel tcfchan#15.
+15:30:44 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A" && level==0} -index 0' command is executed.
+15:30:45 INFO  : 'fpga -state' command is executed.
+15:30:45 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:30:45 INFO  : Context for processor 'microblaze_0' is selected.
+15:30:45 INFO  : Hardware design information is loaded from 'C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/system_top_hw_platform_0/system.hdf'.
+15:30:45 INFO  : Context for processor 'microblaze_0' is selected.
+15:30:46 INFO  : Processor reset is completed for 'microblaze_0'.
+15:30:46 INFO  : Context for processor 'microblaze_0' is selected.
+15:30:46 INFO  : The application 'C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/main/Debug/main.elf' is downloaded to processor 'microblaze_0'.
+15:30:46 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+loadhw C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/system_top_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+dow C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/main/Debug/main.elf
+----------------End of Script----------------
+
+15:30:46 INFO  : Memory regions updated for context MicroBlaze #0
+15:30:46 INFO  : Context for processor 'microblaze_0' is selected.
+15:30:46 INFO  : 'con' command is executed.
+15:30:46 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+con
+----------------End of Script----------------
+
+15:40:01 INFO  : No changes in MSS file content so not generating sources.
+15:40:26 INFO  : Disconnected from the channel tcfchan#16.
+15:40:27 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A" && level==0} -index 0' command is executed.
+15:40:27 INFO  : 'fpga -state' command is executed.
+15:40:27 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:40:27 INFO  : Context for processor 'microblaze_0' is selected.
+15:40:28 INFO  : Hardware design information is loaded from 'C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/system_top_hw_platform_0/system.hdf'.
+15:40:28 INFO  : Context for processor 'microblaze_0' is selected.
+15:40:28 INFO  : Processor reset is completed for 'microblaze_0'.
+15:40:28 INFO  : Context for processor 'microblaze_0' is selected.
+15:40:29 INFO  : The application 'C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/main/Debug/main.elf' is downloaded to processor 'microblaze_0'.
+15:40:29 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+loadhw C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/system_top_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+dow C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/main/Debug/main.elf
+----------------End of Script----------------
+
+15:40:29 INFO  : Memory regions updated for context MicroBlaze #0
+15:40:29 INFO  : Context for processor 'microblaze_0' is selected.
+15:40:29 INFO  : 'con' command is executed.
+15:40:29 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+con
+----------------End of Script----------------
+
+15:40:47 ERROR : Unexpected error while fetching XMD's response: 
+java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:209)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:284)
+	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:326)
+	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:178)
+	at java.io.InputStreamReader.read(InputStreamReader.java:184)
+	at java.io.BufferedReader.fill(BufferedReader.java:161)
+	at java.io.BufferedReader.read(BufferedReader.java:182)
+	at com.xilinx.sdk.targetmanager.internal.json.XMDJSONProcess$CommandResultsReader.run(XMDJSONProcess.java:332)
+	at java.lang.Thread.run(Thread.java:745)
+15:40:47 ERROR : Zero sized response read from XMD. This indicates a communication error or a programming error.
+15:40:51 ERROR : Unexpected Error while writing user command to XMD stdin: {}
+java.io.IOException
+	at org.eclipse.debug.internal.core.StreamsProxy.write(StreamsProxy.java:129)
+	at com.xilinx.sdk.targetmanager.ui.xmd.XMDConsolePresenter.issueXMDConsoleCommand(XMDConsolePresenter.java:125)
+	at com.xilinx.sdk.targetmanager.ui.xmd.XMDConsolePresenter.processUserInput(XMDConsolePresenter.java:112)
+	at com.xilinx.sdk.targetmanager.ui.xmd.XMDConsolePresenter.xmdInputKeyPressed(XMDConsolePresenter.java:91)
+	at com.xilinx.sdk.targetmanager.ui.xmd.XMDConsoleView$1.keyPressed(XMDConsoleView.java:172)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:167)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1057)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1081)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1108)
+	at org.eclipse.swt.widgets.Text.sendKeyEvent(Text.java:1726)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1104)
+	at org.eclipse.swt.widgets.Widget.wmChar(Widget.java:1525)
+	at org.eclipse.swt.widgets.Control.WM_CHAR(Control.java:4723)
+	at org.eclipse.swt.widgets.Text.WM_CHAR(Text.java:2611)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4611)
+	at org.eclipse.swt.widgets.Text.windowProc(Text.java:2597)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4977)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(OS.java:2549)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3757)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1113)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:997)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:140)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:611)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:567)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:124)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:354)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:181)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:636)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1450)
+15:41:14 INFO  : Disconnected from the channel tcfchan#17.
+15:41:14 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A" && level==0} -index 0' command is executed.
+15:41:14 INFO  : 'fpga -state' command is executed.
+15:41:14 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:41:15 INFO  : Context for processor 'microblaze_0' is selected.
+15:41:15 INFO  : Hardware design information is loaded from 'C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/system_top_hw_platform_0/system.hdf'.
+15:41:15 INFO  : Context for processor 'microblaze_0' is selected.
+15:41:15 INFO  : Processor reset is completed for 'microblaze_0'.
+15:41:16 INFO  : Context for processor 'microblaze_0' is selected.
+15:41:16 INFO  : The application 'C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/main/Debug/main.elf' is downloaded to processor 'microblaze_0'.
+15:41:16 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+loadhw C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/system_top_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+dow C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/main/Debug/main.elf
+----------------End of Script----------------
+
+15:41:16 INFO  : Memory regions updated for context MicroBlaze #0
+15:41:16 INFO  : Context for processor 'microblaze_0' is selected.
+15:41:16 INFO  : 'con' command is executed.
+15:41:16 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+con
+----------------End of Script----------------
+
+15:42:06 ERROR : Unexpected Error while writing user command to XMD stdin: {}
+java.io.IOException
+	at org.eclipse.debug.internal.core.StreamsProxy.write(StreamsProxy.java:129)
+	at com.xilinx.sdk.targetmanager.ui.xmd.XMDConsolePresenter.issueXMDConsoleCommand(XMDConsolePresenter.java:125)
+	at com.xilinx.sdk.targetmanager.ui.xmd.XMDConsolePresenter.processUserInput(XMDConsolePresenter.java:112)
+	at com.xilinx.sdk.targetmanager.ui.xmd.XMDConsolePresenter.xmdInputKeyPressed(XMDConsolePresenter.java:91)
+	at com.xilinx.sdk.targetmanager.ui.xmd.XMDConsoleView$1.keyPressed(XMDConsoleView.java:172)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:167)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1057)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1081)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1108)
+	at org.eclipse.swt.widgets.Text.sendKeyEvent(Text.java:1726)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1104)
+	at org.eclipse.swt.widgets.Widget.wmChar(Widget.java:1525)
+	at org.eclipse.swt.widgets.Control.WM_CHAR(Control.java:4723)
+	at org.eclipse.swt.widgets.Text.WM_CHAR(Text.java:2611)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4611)
+	at org.eclipse.swt.widgets.Text.windowProc(Text.java:2597)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4977)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(OS.java:2549)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3757)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1113)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:997)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:140)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:611)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:567)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:124)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:354)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:181)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:636)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1450)
+15:42:38 ERROR : Unexpected Error while writing user command to XMD stdin: {}
+java.io.IOException
+	at org.eclipse.debug.internal.core.StreamsProxy.write(StreamsProxy.java:129)
+	at com.xilinx.sdk.targetmanager.ui.xmd.XMDConsolePresenter.issueXMDConsoleCommand(XMDConsolePresenter.java:125)
+	at com.xilinx.sdk.targetmanager.ui.xmd.XMDConsolePresenter.processUserInput(XMDConsolePresenter.java:112)
+	at com.xilinx.sdk.targetmanager.ui.xmd.XMDConsolePresenter.xmdInputKeyPressed(XMDConsolePresenter.java:91)
+	at com.xilinx.sdk.targetmanager.ui.xmd.XMDConsoleView$1.keyPressed(XMDConsoleView.java:172)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:167)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1057)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1081)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1108)
+	at org.eclipse.swt.widgets.Text.sendKeyEvent(Text.java:1726)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1104)
+	at org.eclipse.swt.widgets.Widget.wmChar(Widget.java:1525)
+	at org.eclipse.swt.widgets.Control.WM_CHAR(Control.java:4723)
+	at org.eclipse.swt.widgets.Text.WM_CHAR(Text.java:2611)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4611)
+	at org.eclipse.swt.widgets.Text.windowProc(Text.java:2597)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4977)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(OS.java:2549)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3757)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1113)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:997)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:140)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:611)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:567)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:124)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:354)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:181)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:636)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1450)
+15:42:47 INFO  : Launching XSDB server: xsdb.bat C:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+15:43:44 INFO  : Launching XSDB server: xsdb.bat C:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+15:43:45 INFO  : XSDB server has started successfully.
+15:43:45 INFO  : Processing command line option -hwspec C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/system_top.hdf.
+15:43:46 INFO  : Checking for hwspec changes in the project system_top_hw_platform_0.
+15:45:11 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+15:45:23 INFO  : Launching XSDB server: xsdb.bat C:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+15:45:24 INFO  : XSDB server has started successfully.
+15:45:27 INFO  : Processing command line option -hwspec C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/system_top.hdf.
+15:45:29 INFO  : Checking for hwspec changes in the project system_top_hw_platform_0.
+15:45:42 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A" && level==0} -index 0' command is executed.
+15:45:42 INFO  : 'fpga -state' command is executed.
+15:45:42 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:45:42 INFO  : Context for processor 'microblaze_0' is selected.
+15:45:43 INFO  : Hardware design information is loaded from 'C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/system_top_hw_platform_0/system.hdf'.
+15:45:43 INFO  : Context for processor 'microblaze_0' is selected.
+15:45:43 INFO  : Processor reset is completed for 'microblaze_0'.
+15:45:43 INFO  : Context for processor 'microblaze_0' is selected.
+15:45:44 INFO  : The application 'C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/main/Debug/main.elf' is downloaded to processor 'microblaze_0'.
+15:45:44 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+loadhw C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/system_top_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+dow C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/main/Debug/main.elf
+----------------End of Script----------------
+
+15:45:44 INFO  : Memory regions updated for context MicroBlaze #0
+15:45:44 INFO  : Context for processor 'microblaze_0' is selected.
+15:45:44 INFO  : 'con' command is executed.
+15:45:44 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+con
+----------------End of Script----------------
+
+15:46:19 INFO  : Disconnected from the channel tcfchan#1.
+15:46:19 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A" && level==0} -index 0' command is executed.
+15:46:20 INFO  : 'fpga -state' command is executed.
+15:46:20 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:46:20 INFO  : Context for processor 'microblaze_0' is selected.
+15:46:22 INFO  : Hardware design information is loaded from 'C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/system_top_hw_platform_0/system.hdf'.
+15:46:22 INFO  : Context for processor 'microblaze_0' is selected.
+15:46:22 INFO  : Processor reset is completed for 'microblaze_0'.
+15:46:22 INFO  : Context for processor 'microblaze_0' is selected.
+15:46:23 INFO  : The application 'C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/main/Debug/main.elf' is downloaded to processor 'microblaze_0'.
+15:46:23 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+loadhw C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/system_top_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+dow C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/main/Debug/main.elf
+----------------End of Script----------------
+
+15:46:23 INFO  : Memory regions updated for context MicroBlaze #0
+15:46:23 INFO  : Context for processor 'microblaze_0' is selected.
+15:46:23 INFO  : 'con' command is executed.
+15:46:23 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+con
+----------------End of Script----------------
+
+15:50:43 INFO  : Disconnected from the channel tcfchan#2.
+15:50:43 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A" && level==0} -index 0' command is executed.
+15:50:43 INFO  : 'fpga -state' command is executed.
+15:50:43 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:50:44 INFO  : Context for processor 'microblaze_0' is selected.
+15:50:45 INFO  : Hardware design information is loaded from 'C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/system_top_hw_platform_0/system.hdf'.
+15:50:45 INFO  : Context for processor 'microblaze_0' is selected.
+15:50:45 INFO  : Processor reset is completed for 'microblaze_0'.
+15:50:46 INFO  : Context for processor 'microblaze_0' is selected.
+15:50:46 INFO  : The application 'C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/main/Debug/main.elf' is downloaded to processor 'microblaze_0'.
+15:50:46 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+loadhw C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/system_top_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+dow C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/main/Debug/main.elf
+----------------End of Script----------------
+
+15:50:46 INFO  : Memory regions updated for context MicroBlaze #0
+15:50:46 INFO  : Context for processor 'microblaze_0' is selected.
+15:50:46 INFO  : 'con' command is executed.
+15:50:46 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+con
+----------------End of Script----------------
+
+15:51:00 INFO  : Disconnected from the channel tcfchan#3.
+15:51:01 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A" && level==0} -index 0' command is executed.
+15:51:01 INFO  : 'fpga -state' command is executed.
+15:51:01 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:51:01 INFO  : Context for processor 'microblaze_0' is selected.
+15:51:03 INFO  : Hardware design information is loaded from 'C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/system_top_hw_platform_0/system.hdf'.
+15:51:03 INFO  : Context for processor 'microblaze_0' is selected.
+15:51:03 INFO  : Processor reset is completed for 'microblaze_0'.
+15:51:03 INFO  : Context for processor 'microblaze_0' is selected.
+15:51:04 INFO  : The application 'C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/main/Debug/main.elf' is downloaded to processor 'microblaze_0'.
+15:51:04 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+loadhw C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/system_top_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+dow C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/main/Debug/main.elf
+----------------End of Script----------------
+
+15:51:04 INFO  : Memory regions updated for context MicroBlaze #0
+15:51:04 INFO  : Context for processor 'microblaze_0' is selected.
+15:51:04 INFO  : 'con' command is executed.
+15:51:04 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+con
+----------------End of Script----------------
+
+15:52:16 INFO  : Disconnected from the channel tcfchan#4.
+15:52:16 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A" && level==0} -index 0' command is executed.
+15:52:16 INFO  : 'fpga -state' command is executed.
+15:52:16 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:52:17 INFO  : Context for processor 'microblaze_0' is selected.
+15:52:18 INFO  : Hardware design information is loaded from 'C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/system_top_hw_platform_0/system.hdf'.
+15:52:18 INFO  : Context for processor 'microblaze_0' is selected.
+15:52:19 ERROR : Cannot stop MicroBlaze. Stalled on memory access
+15:52:19 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+loadhw C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/system_top_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+rst -processor
+----------------End of Script----------------
+
+15:55:35 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A" && level==0} -index 0' command is executed.
+15:55:35 INFO  : 'fpga -state' command is executed.
+15:55:35 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:55:36 INFO  : Context for processor 'microblaze_0' is selected.
+15:55:36 INFO  : Hardware design information is loaded from 'C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/system_top_hw_platform_0/system.hdf'.
+15:55:36 INFO  : Context for processor 'microblaze_0' is selected.
+15:55:36 ERROR : Cannot stop MicroBlaze. Stalled on memory access
+15:55:36 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+loadhw C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/system_top_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+rst -processor
+----------------End of Script----------------
+
+15:58:48 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:58:48 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A" && level==0} -index 0' command is executed.
+15:58:48 ERROR : couldn't open "C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/system_top_hw_platform_0/download.bit": no such file or directory
+16:00:49 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A" && level==0} -index 0' command is executed.
+16:00:49 INFO  : 'fpga -state' command is executed.
+16:00:49 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:00:50 INFO  : Context for processor 'microblaze_0' is selected.
+16:00:50 INFO  : Hardware design information is loaded from 'C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/system_top_hw_platform_0/system.hdf'.
+16:00:50 INFO  : Context for processor 'microblaze_0' is selected.
+16:00:50 INFO  : Processor reset is completed for 'microblaze_0'.
+16:00:51 INFO  : Context for processor 'microblaze_0' is selected.
+16:00:51 INFO  : The application 'C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/main/Debug/main.elf' is downloaded to processor 'microblaze_0'.
+16:00:51 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+loadhw C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/system_top_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+dow C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/main/Debug/main.elf
+----------------End of Script----------------
+
+16:00:51 INFO  : Memory regions updated for context MicroBlaze #0
+16:00:51 INFO  : Context for processor 'microblaze_0' is selected.
+16:00:51 INFO  : 'con' command is executed.
+16:00:51 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+con
+----------------End of Script----------------
+
+17:58:32 INFO  : Disconnected from the channel tcfchan#5.
+17:58:33 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A" && level==0} -index 0' command is executed.
+17:58:33 INFO  : 'fpga -state' command is executed.
+18:00:15 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A" && level==0} -index 0' command is executed.
+18:00:15 INFO  : 'fpga -state' command is executed.
+18:00:15 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:00:16 INFO  : Context for processor 'microblaze_0' is selected.
+18:00:17 INFO  : Hardware design information is loaded from 'C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/system_top_hw_platform_0/system.hdf'.
+18:00:17 INFO  : Context for processor 'microblaze_0' is selected.
+18:00:18 INFO  : Processor reset is completed for 'microblaze_0'.
+18:00:18 INFO  : Context for processor 'microblaze_0' is selected.
+18:00:18 INFO  : The application 'C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/main/Debug/main.elf' is downloaded to processor 'microblaze_0'.
+18:00:18 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+loadhw C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/system_top_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+dow C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/main/Debug/main.elf
+----------------End of Script----------------
+
+18:00:19 INFO  : Memory regions updated for context MicroBlaze #0
+18:00:19 INFO  : Context for processor 'microblaze_0' is selected.
+18:00:19 INFO  : 'con' command is executed.
+18:00:19 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+con
+----------------End of Script----------------
+
+18:01:33 INFO  : Disconnected from the channel tcfchan#6.
+18:01:34 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A" && level==0} -index 0' command is executed.
+18:01:34 INFO  : 'fpga -state' command is executed.
+18:01:34 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:01:35 INFO  : Context for processor 'microblaze_0' is selected.
+18:01:36 INFO  : Hardware design information is loaded from 'C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/system_top_hw_platform_0/system.hdf'.
+18:01:36 INFO  : Context for processor 'microblaze_0' is selected.
+18:01:36 INFO  : Processor reset is completed for 'microblaze_0'.
+18:01:37 INFO  : Context for processor 'microblaze_0' is selected.
+18:01:37 INFO  : The application 'C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/main/Debug/main.elf' is downloaded to processor 'microblaze_0'.
+18:01:37 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+loadhw C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/system_top_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+dow C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/main/Debug/main.elf
+----------------End of Script----------------
+
+18:01:37 INFO  : Memory regions updated for context MicroBlaze #0
+18:01:37 INFO  : Context for processor 'microblaze_0' is selected.
+18:01:37 INFO  : 'con' command is executed.
+18:01:37 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+con
+----------------End of Script----------------
+
+18:09:22 INFO  : Successfully generated C:\Users\lawpark\Documents\hls_project\mcml_project\mcml_project.sdk\main\src\lscript.ld.
+18:09:22 INFO  : Applying linker script to all configurations of project main.
+18:09:22 INFO  : Setting rebuild state to true for all configurations of project main.
+18:10:16 INFO  : Disconnected from the channel tcfchan#7.
+18:10:17 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A" && level==0} -index 0' command is executed.
+18:10:17 INFO  : 'fpga -state' command is executed.
+18:10:17 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:10:17 INFO  : Context for processor 'microblaze_0' is selected.
+18:10:19 INFO  : Hardware design information is loaded from 'C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/system_top_hw_platform_0/system.hdf'.
+18:10:19 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+loadhw C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/system_top_hw_platform_0/system.hdf
+----------------End of Script----------------
+
+18:10:19 INFO  : Memory regions updated for context MicroBlaze #0
+18:12:32 INFO  : Successfully generated C:\Users\lawpark\Documents\hls_project\mcml_project\mcml_project.sdk\main\src\lscript.ld.
+18:12:32 INFO  : Applying linker script to all configurations of project main.
+18:12:32 INFO  : Setting rebuild state to true for all configurations of project main.
+18:12:48 INFO  : Disconnected from the channel tcfchan#8.
+18:12:48 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A" && level==0} -index 0' command is executed.
+18:12:48 INFO  : 'fpga -state' command is executed.
+18:12:48 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:12:49 INFO  : Context for processor 'microblaze_0' is selected.
+18:12:51 INFO  : Hardware design information is loaded from 'C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/system_top_hw_platform_0/system.hdf'.
+18:12:51 INFO  : Context for processor 'microblaze_0' is selected.
+18:12:51 INFO  : Processor reset is completed for 'microblaze_0'.
+18:12:52 INFO  : Context for processor 'microblaze_0' is selected.
+18:12:52 INFO  : The application 'C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/main/Debug/main.elf' is downloaded to processor 'microblaze_0'.
+18:12:52 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+loadhw C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/system_top_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+dow C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/main/Debug/main.elf
+----------------End of Script----------------
+
+18:12:52 INFO  : Memory regions updated for context MicroBlaze #0
+18:12:52 INFO  : Context for processor 'microblaze_0' is selected.
+18:12:52 INFO  : 'con' command is executed.
+18:12:52 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+con
+----------------End of Script----------------
+
+18:17:07 INFO  : Disconnected from the channel tcfchan#9.
+18:17:07 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A" && level==0} -index 0' command is executed.
+18:17:07 INFO  : 'fpga -state' command is executed.
+18:17:07 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:17:08 INFO  : Context for processor 'microblaze_0' is selected.
+18:17:09 INFO  : Hardware design information is loaded from 'C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/system_top_hw_platform_0/system.hdf'.
+18:17:09 INFO  : Context for processor 'microblaze_0' is selected.
+18:17:10 INFO  : Processor reset is completed for 'microblaze_0'.
+18:17:10 INFO  : Context for processor 'microblaze_0' is selected.
+18:17:10 INFO  : The application 'C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/main/Debug/main.elf' is downloaded to processor 'microblaze_0'.
+18:17:10 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+loadhw C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/system_top_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+dow C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/main/Debug/main.elf
+----------------End of Script----------------
+
+18:17:10 INFO  : Memory regions updated for context MicroBlaze #0
+18:17:10 INFO  : Context for processor 'microblaze_0' is selected.
+18:17:11 INFO  : 'con' command is executed.
+18:17:11 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+con
+----------------End of Script----------------
+
+18:17:43 INFO  : Disconnected from the channel tcfchan#10.
+18:17:43 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A" && level==0} -index 0' command is executed.
+18:17:44 INFO  : 'fpga -state' command is executed.
+18:17:44 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:17:44 INFO  : Context for processor 'microblaze_0' is selected.
+18:17:46 INFO  : Hardware design information is loaded from 'C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/system_top_hw_platform_0/system.hdf'.
+18:17:46 INFO  : Context for processor 'microblaze_0' is selected.
+18:17:46 INFO  : Processor reset is completed for 'microblaze_0'.
+18:17:47 INFO  : Context for processor 'microblaze_0' is selected.
+18:17:47 INFO  : The application 'C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/main/Debug/main.elf' is downloaded to processor 'microblaze_0'.
+18:17:47 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+loadhw C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/system_top_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+dow C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/main/Debug/main.elf
+----------------End of Script----------------
+
+18:17:47 INFO  : Memory regions updated for context MicroBlaze #0
+18:17:47 INFO  : Context for processor 'microblaze_0' is selected.
+18:17:47 INFO  : 'con' command is executed.
+18:17:47 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+con
+----------------End of Script----------------
+
+18:23:14 INFO  : Disconnected from the channel tcfchan#11.
+18:23:14 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A" && level==0} -index 0' command is executed.
+18:23:14 INFO  : 'fpga -state' command is executed.
+18:23:14 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:23:15 INFO  : Context for processor 'microblaze_0' is selected.
+18:23:16 INFO  : Hardware design information is loaded from 'C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/system_top_hw_platform_0/system.hdf'.
+18:23:17 INFO  : Context for processor 'microblaze_0' is selected.
+18:23:17 INFO  : Processor reset is completed for 'microblaze_0'.
+18:23:17 INFO  : Context for processor 'microblaze_0' is selected.
+18:23:17 INFO  : The application 'C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/main/Debug/main.elf' is downloaded to processor 'microblaze_0'.
+18:23:17 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+loadhw C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/system_top_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+dow C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/main/Debug/main.elf
+----------------End of Script----------------
+
+18:23:17 INFO  : Memory regions updated for context MicroBlaze #0
+18:23:17 INFO  : Context for processor 'microblaze_0' is selected.
+18:23:18 INFO  : 'con' command is executed.
+18:23:18 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+con
+----------------End of Script----------------
+
+18:26:03 INFO  : Disconnected from the channel tcfchan#12.
+18:26:03 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A" && level==0} -index 0' command is executed.
+18:26:03 INFO  : 'fpga -state' command is executed.
+18:26:03 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:26:04 INFO  : Context for processor 'microblaze_0' is selected.
+18:26:05 INFO  : Hardware design information is loaded from 'C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/system_top_hw_platform_0/system.hdf'.
+18:26:06 INFO  : Context for processor 'microblaze_0' is selected.
+18:26:06 INFO  : Processor reset is completed for 'microblaze_0'.
+18:26:06 INFO  : Context for processor 'microblaze_0' is selected.
+18:26:06 INFO  : The application 'C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/main/Debug/main.elf' is downloaded to processor 'microblaze_0'.
+18:26:06 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+loadhw C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/system_top_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+dow C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/main/Debug/main.elf
+----------------End of Script----------------
+
+18:26:06 INFO  : Memory regions updated for context MicroBlaze #0
+18:26:06 INFO  : Context for processor 'microblaze_0' is selected.
+18:26:07 INFO  : 'con' command is executed.
+18:26:07 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+con
+----------------End of Script----------------
+
+18:27:38 INFO  : Disconnected from the channel tcfchan#13.
+18:27:39 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A" && level==0} -index 0' command is executed.
+18:27:39 INFO  : 'fpga -state' command is executed.
+18:27:39 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:27:39 INFO  : Context for processor 'microblaze_0' is selected.
+18:27:41 INFO  : Hardware design information is loaded from 'C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/system_top_hw_platform_0/system.hdf'.
+18:27:41 INFO  : Context for processor 'microblaze_0' is selected.
+18:27:41 INFO  : Processor reset is completed for 'microblaze_0'.
+18:27:42 INFO  : Context for processor 'microblaze_0' is selected.
+18:27:42 INFO  : The application 'C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/main/Debug/main.elf' is downloaded to processor 'microblaze_0'.
+18:27:42 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+loadhw C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/system_top_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+dow C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/main/Debug/main.elf
+----------------End of Script----------------
+
+18:27:42 INFO  : Memory regions updated for context MicroBlaze #0
+18:27:42 INFO  : Context for processor 'microblaze_0' is selected.
+18:27:42 INFO  : 'con' command is executed.
+18:27:42 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+con
+----------------End of Script----------------
+
+18:28:49 INFO  : Disconnected from the channel tcfchan#14.
+18:28:50 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A" && level==0} -index 0' command is executed.
+18:28:50 INFO  : 'fpga -state' command is executed.
+18:28:50 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:28:50 INFO  : Context for processor 'microblaze_0' is selected.
+18:28:52 INFO  : Hardware design information is loaded from 'C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/system_top_hw_platform_0/system.hdf'.
+18:28:52 INFO  : Context for processor 'microblaze_0' is selected.
+18:28:52 INFO  : Processor reset is completed for 'microblaze_0'.
+18:28:52 INFO  : Context for processor 'microblaze_0' is selected.
+18:28:53 INFO  : The application 'C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/main/Debug/main.elf' is downloaded to processor 'microblaze_0'.
+18:28:53 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+loadhw C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/system_top_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+dow C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/main/Debug/main.elf
+----------------End of Script----------------
+
+18:28:53 INFO  : Memory regions updated for context MicroBlaze #0
+18:28:53 INFO  : Context for processor 'microblaze_0' is selected.
+18:28:53 INFO  : 'con' command is executed.
+18:28:53 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+con
+----------------End of Script----------------
+
+18:30:50 INFO  : Disconnected from the channel tcfchan#15.
+18:30:50 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A" && level==0} -index 0' command is executed.
+18:30:50 INFO  : 'fpga -state' command is executed.
+18:30:50 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:30:51 INFO  : Context for processor 'microblaze_0' is selected.
+18:30:52 INFO  : Hardware design information is loaded from 'C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/system_top_hw_platform_0/system.hdf'.
+18:30:52 INFO  : Context for processor 'microblaze_0' is selected.
+18:30:52 INFO  : Processor reset is completed for 'microblaze_0'.
+18:30:53 INFO  : Context for processor 'microblaze_0' is selected.
+18:30:53 INFO  : The application 'C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/main/Debug/main.elf' is downloaded to processor 'microblaze_0'.
+18:30:53 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+loadhw C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/system_top_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+dow C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/main/Debug/main.elf
+----------------End of Script----------------
+
+18:30:53 INFO  : Memory regions updated for context MicroBlaze #0
+18:30:53 INFO  : Context for processor 'microblaze_0' is selected.
+18:30:53 INFO  : 'con' command is executed.
+18:30:53 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+con
+----------------End of Script----------------
+
+18:31:56 INFO  : Disconnected from the channel tcfchan#16.
+18:31:56 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A" && level==0} -index 0' command is executed.
+18:31:56 INFO  : 'fpga -state' command is executed.
+18:31:56 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:31:57 INFO  : Context for processor 'microblaze_0' is selected.
+18:31:58 INFO  : Hardware design information is loaded from 'C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/system_top_hw_platform_0/system.hdf'.
+18:31:58 INFO  : Context for processor 'microblaze_0' is selected.
+18:31:59 INFO  : Processor reset is completed for 'microblaze_0'.
+18:31:59 INFO  : Context for processor 'microblaze_0' is selected.
+18:31:59 INFO  : The application 'C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/main/Debug/main.elf' is downloaded to processor 'microblaze_0'.
+18:31:59 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+loadhw C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/system_top_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+dow C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/main/Debug/main.elf
+----------------End of Script----------------
+
+18:31:59 INFO  : Memory regions updated for context MicroBlaze #0
+18:31:59 INFO  : Context for processor 'microblaze_0' is selected.
+18:31:59 INFO  : 'con' command is executed.
+18:31:59 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+con
+----------------End of Script----------------
+
+19:24:16 INFO  : Disconnected from the channel tcfchan#17.
+19:24:17 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A" && level==0} -index 0' command is executed.
+19:24:17 INFO  : 'fpga -state' command is executed.
+19:24:17 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:24:17 INFO  : Context for processor 'microblaze_0' is selected.
+19:24:19 INFO  : Hardware design information is loaded from 'C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/system_top_hw_platform_0/system.hdf'.
+19:24:19 INFO  : Context for processor 'microblaze_0' is selected.
+19:24:19 INFO  : Processor reset is completed for 'microblaze_0'.
+19:24:19 INFO  : Context for processor 'microblaze_0' is selected.
+19:24:20 INFO  : The application 'C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/main/Debug/main.elf' is downloaded to processor 'microblaze_0'.
+19:24:20 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+loadhw C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/system_top_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+dow C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/main/Debug/main.elf
+----------------End of Script----------------
+
+19:24:20 INFO  : Memory regions updated for context MicroBlaze #0
+19:24:20 INFO  : Context for processor 'microblaze_0' is selected.
+19:24:20 INFO  : 'con' command is executed.
+19:24:20 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+con
+----------------End of Script----------------
+
+19:34:36 WARN  : Unexpected exception occurred.
+java.io.IOException: Command [C 6715 xsdb eval "disconnect tcfchan#18"] aborted
+	at org.eclipse.tcf.core.AbstractChannel$9.run(AbstractChannel.java:753)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:209)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:284)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:345)
+	at java.io.FilterInputStream.read(FilterInputStream.java:107)
+	at org.eclipse.tcf.core.ChannelTCP.get(ChannelTCP.java:162)
+	at org.eclipse.tcf.core.StreamChannel.read(StreamChannel.java:84)
+	at org.eclipse.tcf.core.AbstractChannel$1.run(AbstractChannel.java:254)
+19:34:39 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+19:35:15 INFO  : Launching XSDB server: xsdb.bat C:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+19:35:16 INFO  : XSDB server has started successfully.
+19:35:16 INFO  : Processing command line option -hwspec C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/system_top.hdf.
+19:35:16 INFO  : Checking for hwspec changes in the project system_top_hw_platform_0.
+19:35:35 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A" && level==0} -index 0' command is executed.
+19:35:35 INFO  : 'fpga -state' command is executed.
+19:35:35 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:35:36 INFO  : Context for processor 'microblaze_0' is selected.
+19:35:36 INFO  : Hardware design information is loaded from 'C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/system_top_hw_platform_0/system.hdf'.
+19:35:36 INFO  : Context for processor 'microblaze_0' is selected.
+19:35:37 INFO  : Processor reset is completed for 'microblaze_0'.
+19:35:37 INFO  : Context for processor 'microblaze_0' is selected.
+19:35:37 INFO  : The application 'C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/main/Debug/main.elf' is downloaded to processor 'microblaze_0'.
+19:35:37 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+loadhw C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/system_top_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+dow C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/main/Debug/main.elf
+----------------End of Script----------------
+
+19:35:38 INFO  : Memory regions updated for context MicroBlaze #0
+19:35:38 INFO  : Context for processor 'microblaze_0' is selected.
+19:35:38 INFO  : 'con' command is executed.
+19:35:38 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+con
+----------------End of Script----------------
+
+19:38:17 INFO  : Disconnected from the channel tcfchan#1.
+19:38:18 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A" && level==0} -index 0' command is executed.
+19:38:18 INFO  : 'fpga -state' command is executed.
+19:38:18 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:38:19 INFO  : Context for processor 'microblaze_0' is selected.
+19:38:19 INFO  : Hardware design information is loaded from 'C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/system_top_hw_platform_0/system.hdf'.
+19:38:19 INFO  : Context for processor 'microblaze_0' is selected.
+19:38:19 INFO  : Processor reset is completed for 'microblaze_0'.
+19:38:20 INFO  : Context for processor 'microblaze_0' is selected.
+19:38:20 INFO  : The application 'C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/main/Debug/main.elf' is downloaded to processor 'microblaze_0'.
+19:38:20 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+loadhw C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/system_top_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+dow C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/main/Debug/main.elf
+----------------End of Script----------------
+
+19:38:20 INFO  : Memory regions updated for context MicroBlaze #0
+19:38:20 INFO  : Context for processor 'microblaze_0' is selected.
+19:38:20 INFO  : 'con' command is executed.
+19:38:20 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+con
+----------------End of Script----------------
+
+19:41:48 INFO  : Disconnected from the channel tcfchan#2.
+19:41:49 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A" && level==0} -index 0' command is executed.
+19:41:49 INFO  : 'fpga -state' command is executed.
+19:41:49 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:41:49 INFO  : Context for processor 'microblaze_0' is selected.
+19:41:49 INFO  : Hardware design information is loaded from 'C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/system_top_hw_platform_0/system.hdf'.
+19:41:50 INFO  : Context for processor 'microblaze_0' is selected.
+19:41:50 INFO  : Processor reset is completed for 'microblaze_0'.
+19:41:50 INFO  : Context for processor 'microblaze_0' is selected.
+19:41:50 INFO  : The application 'C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/main/Debug/main.elf' is downloaded to processor 'microblaze_0'.
+19:41:50 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+loadhw C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/system_top_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+dow C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/main/Debug/main.elf
+----------------End of Script----------------
+
+19:41:50 INFO  : Memory regions updated for context MicroBlaze #0
+19:41:50 INFO  : Context for processor 'microblaze_0' is selected.
+19:41:51 INFO  : 'con' command is executed.
+19:41:51 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+con
+----------------End of Script----------------
+
+19:42:24 INFO  : Disconnected from the channel tcfchan#3.
+19:42:24 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A" && level==0} -index 0' command is executed.
+19:42:25 INFO  : 'fpga -state' command is executed.
+19:42:25 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:42:25 INFO  : Context for processor 'microblaze_0' is selected.
+19:42:25 INFO  : Hardware design information is loaded from 'C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/system_top_hw_platform_0/system.hdf'.
+19:42:25 INFO  : Context for processor 'microblaze_0' is selected.
+19:42:26 INFO  : Processor reset is completed for 'microblaze_0'.
+19:42:26 INFO  : Context for processor 'microblaze_0' is selected.
+19:42:26 INFO  : The application 'C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/main/Debug/main.elf' is downloaded to processor 'microblaze_0'.
+19:42:26 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+loadhw C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/system_top_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+dow C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/main/Debug/main.elf
+----------------End of Script----------------
+
+19:42:26 INFO  : Memory regions updated for context MicroBlaze #0
+19:42:26 INFO  : Context for processor 'microblaze_0' is selected.
+19:42:27 INFO  : 'con' command is executed.
+19:42:27 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+con
+----------------End of Script----------------
+
+19:44:45 INFO  : Disconnected from the channel tcfchan#4.
+19:44:45 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A" && level==0} -index 0' command is executed.
+19:44:45 INFO  : 'fpga -state' command is executed.
+19:44:45 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:44:46 INFO  : Context for processor 'microblaze_0' is selected.
+19:44:46 INFO  : Hardware design information is loaded from 'C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/system_top_hw_platform_0/system.hdf'.
+19:44:46 INFO  : Context for processor 'microblaze_0' is selected.
+19:44:46 INFO  : Processor reset is completed for 'microblaze_0'.
+19:44:47 INFO  : Context for processor 'microblaze_0' is selected.
+19:44:47 INFO  : The application 'C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/main/Debug/main.elf' is downloaded to processor 'microblaze_0'.
+19:44:47 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+loadhw C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/system_top_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+dow C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/main/Debug/main.elf
+----------------End of Script----------------
+
+19:44:47 INFO  : Memory regions updated for context MicroBlaze #0
+19:44:47 INFO  : Context for processor 'microblaze_0' is selected.
+19:44:47 INFO  : 'con' command is executed.
+19:44:47 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+con
+----------------End of Script----------------
+
+09:52:46 INFO  : Disconnected from the channel tcfchan#5.
+09:52:47 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A" && level==0} -index 0' command is executed.
+09:52:47 INFO  : 'fpga -state' command is executed.
+09:52:47 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:52:47 INFO  : Context for processor 'microblaze_0' is selected.
+09:52:47 INFO  : Hardware design information is loaded from 'C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/system_top_hw_platform_0/system.hdf'.
+09:52:48 INFO  : Context for processor 'microblaze_0' is selected.
+09:52:48 INFO  : Processor reset is completed for 'microblaze_0'.
+09:52:48 INFO  : Context for processor 'microblaze_0' is selected.
+09:52:48 INFO  : The application 'C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/main/Debug/main.elf' is downloaded to processor 'microblaze_0'.
+09:52:48 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+loadhw C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/system_top_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+dow C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/main/Debug/main.elf
+----------------End of Script----------------
+
+09:52:48 INFO  : Memory regions updated for context MicroBlaze #0
+09:52:49 INFO  : Context for processor 'microblaze_0' is selected.
+09:52:49 INFO  : 'con' command is executed.
+09:52:49 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+con
+----------------End of Script----------------
+
+10:04:48 INFO  : Disconnected from the channel tcfchan#6.
+10:04:49 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A" && level==0} -index 0' command is executed.
+10:04:49 INFO  : 'fpga -state' command is executed.
+10:04:49 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:04:50 INFO  : Context for processor 'microblaze_0' is selected.
+10:04:50 INFO  : Hardware design information is loaded from 'C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/system_top_hw_platform_0/system.hdf'.
+10:04:50 INFO  : Context for processor 'microblaze_0' is selected.
+10:04:50 INFO  : Processor reset is completed for 'microblaze_0'.
+10:04:50 INFO  : Context for processor 'microblaze_0' is selected.
+10:04:51 INFO  : The application 'C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/main/Debug/main.elf' is downloaded to processor 'microblaze_0'.
+10:04:51 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+loadhw C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/system_top_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+dow C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/main/Debug/main.elf
+----------------End of Script----------------
+
+10:04:51 INFO  : Memory regions updated for context MicroBlaze #0
+10:04:51 INFO  : Context for processor 'microblaze_0' is selected.
+10:04:51 INFO  : 'con' command is executed.
+10:04:51 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+con
+----------------End of Script----------------
+
+10:05:01 INFO  : Disconnected from the channel tcfchan#7.
+10:05:01 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A" && level==0} -index 0' command is executed.
+10:05:01 INFO  : 'fpga -state' command is executed.
+10:05:02 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:05:02 INFO  : Context for processor 'microblaze_0' is selected.
+10:05:02 INFO  : Hardware design information is loaded from 'C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/system_top_hw_platform_0/system.hdf'.
+10:05:03 INFO  : Context for processor 'microblaze_0' is selected.
+10:05:03 INFO  : Processor reset is completed for 'microblaze_0'.
+10:05:03 INFO  : Context for processor 'microblaze_0' is selected.
+10:05:03 INFO  : The application 'C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/main/Debug/main.elf' is downloaded to processor 'microblaze_0'.
+10:05:03 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+loadhw C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/system_top_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+dow C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/main/Debug/main.elf
+----------------End of Script----------------
+
+10:05:03 INFO  : Memory regions updated for context MicroBlaze #0
+10:05:03 INFO  : Context for processor 'microblaze_0' is selected.
+10:05:03 INFO  : 'con' command is executed.
+10:05:03 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+con
+----------------End of Script----------------
+
+10:05:25 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+10:05:25 INFO  : Launching XSDB server: xsdb.bat C:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+10:05:45 INFO  : Launching XSDB server: xsdb.bat C:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+10:05:46 INFO  : XSDB server has started successfully.
+10:05:47 INFO  : Processing command line option -hwspec C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/system_top.hdf.
+10:05:47 INFO  : Checking for hwspec changes in the project system_top_hw_platform_0.
+10:06:24 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A" && level==0} -index 0' command is executed.
+10:06:24 INFO  : 'fpga -state' command is executed.
+10:06:24 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:06:24 INFO  : Context for processor 'microblaze_0' is selected.
+10:06:24 INFO  : Hardware design information is loaded from 'C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/system_top_hw_platform_0/system.hdf'.
+10:06:25 INFO  : Context for processor 'microblaze_0' is selected.
+10:06:25 INFO  : Processor reset is completed for 'microblaze_0'.
+10:06:25 INFO  : Context for processor 'microblaze_0' is selected.
+10:06:25 INFO  : The application 'C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/main/Debug/main.elf' is downloaded to processor 'microblaze_0'.
+10:06:25 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+loadhw C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/system_top_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+dow C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/main/Debug/main.elf
+----------------End of Script----------------
+
+10:06:25 INFO  : Memory regions updated for context MicroBlaze #0
+10:06:26 INFO  : Context for processor 'microblaze_0' is selected.
+10:06:26 INFO  : 'con' command is executed.
+10:06:26 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+con
+----------------End of Script----------------
+
+10:06:27 INFO  : Disconnected from the channel tcfchan#1.
+10:06:28 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A" && level==0} -index 0' command is executed.
+10:06:28 INFO  : 'fpga -state' command is executed.
+10:06:28 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:06:28 INFO  : Context for processor 'microblaze_0' is selected.
+10:06:28 INFO  : Hardware design information is loaded from 'C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/system_top_hw_platform_0/system.hdf'.
+10:06:29 INFO  : Context for processor 'microblaze_0' is selected.
+10:06:29 INFO  : Processor reset is completed for 'microblaze_0'.
+10:06:29 INFO  : Context for processor 'microblaze_0' is selected.
+10:06:29 INFO  : The application 'C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/main/Debug/main.elf' is downloaded to processor 'microblaze_0'.
+10:06:29 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+loadhw C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/system_top_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+dow C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/main/Debug/main.elf
+----------------End of Script----------------
+
+10:06:30 INFO  : Memory regions updated for context MicroBlaze #0
+10:06:30 INFO  : Context for processor 'microblaze_0' is selected.
+10:06:30 INFO  : 'con' command is executed.
+10:06:30 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+con
+----------------End of Script----------------
+
+10:07:19 INFO  : Disconnected from the channel tcfchan#2.
+10:07:20 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A" && level==0} -index 0' command is executed.
+10:07:20 INFO  : 'fpga -state' command is executed.
+10:07:20 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:07:20 INFO  : Context for processor 'microblaze_0' is selected.
+10:07:21 INFO  : Hardware design information is loaded from 'C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/system_top_hw_platform_0/system.hdf'.
+10:07:21 INFO  : Context for processor 'microblaze_0' is selected.
+10:07:21 INFO  : Processor reset is completed for 'microblaze_0'.
+10:07:21 INFO  : Context for processor 'microblaze_0' is selected.
+10:07:22 INFO  : The application 'C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/main/Debug/main.elf' is downloaded to processor 'microblaze_0'.
+10:07:22 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+loadhw C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/system_top_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+dow C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/main/Debug/main.elf
+----------------End of Script----------------
+
+10:07:22 INFO  : Memory regions updated for context MicroBlaze #0
+10:07:22 INFO  : Context for processor 'microblaze_0' is selected.
+10:07:22 INFO  : 'con' command is executed.
+10:07:22 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+con
+----------------End of Script----------------
+
+10:07:50 INFO  : Disconnected from the channel tcfchan#3.
+10:07:50 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A" && level==0} -index 0' command is executed.
+10:07:50 INFO  : 'fpga -state' command is executed.
+10:07:50 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:07:51 INFO  : Context for processor 'microblaze_0' is selected.
+10:07:51 INFO  : Hardware design information is loaded from 'C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/system_top_hw_platform_0/system.hdf'.
+10:07:51 INFO  : Context for processor 'microblaze_0' is selected.
+10:07:51 INFO  : Processor reset is completed for 'microblaze_0'.
+10:07:52 INFO  : Context for processor 'microblaze_0' is selected.
+10:07:52 INFO  : The application 'C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/main/Debug/main.elf' is downloaded to processor 'microblaze_0'.
+10:07:52 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+loadhw C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/system_top_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+dow C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/main/Debug/main.elf
+----------------End of Script----------------
+
+10:07:52 INFO  : Memory regions updated for context MicroBlaze #0
+10:07:52 INFO  : Context for processor 'microblaze_0' is selected.
+10:07:52 INFO  : 'con' command is executed.
+10:07:52 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+con
+----------------End of Script----------------
+
+10:08:25 ERROR : Timed out. 180 seconds have elapsed while waiting for XSDB server to launch.
+10:08:25 WARN  : Unexpected exception occurred.
+java.lang.Exception: java.lang.Error: Channel is waiting for Hello message
+	at org.eclipse.tcf.core.Command.<init>(Command.java:83)
+	at com.xilinx.sdk.xsdb.XSDBCommandManager$8.<init>(XSDBCommandManager.java:384)
+	at com.xilinx.sdk.xsdb.XSDBCommandManager.issueTcfCmd(XSDBCommandManager.java:384)
+	at com.xilinx.sdk.xsdb.XSDBCommandManager.access$4(XSDBCommandManager.java:381)
+	at com.xilinx.sdk.xsdb.XSDBCommandManager$7.run(XSDBCommandManager.java:376)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.Error: Channel is waiting for Hello message
+	at org.eclipse.tcf.core.AbstractChannel.sendCommand(AbstractChannel.java:874)
+	at org.eclipse.tcf.core.Command.<init>(Command.java:79)
+	... 6 more
+10:18:20 INFO  : Disconnected from the channel tcfchan#4.
+10:18:20 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A" && level==0} -index 0' command is executed.
+10:18:20 INFO  : 'fpga -state' command is executed.
+10:18:21 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:18:21 INFO  : Context for processor 'microblaze_0' is selected.
+10:18:21 INFO  : Hardware design information is loaded from 'C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/system_top_hw_platform_0/system.hdf'.
+10:18:21 INFO  : Context for processor 'microblaze_0' is selected.
+10:18:21 INFO  : Processor reset is completed for 'microblaze_0'.
+10:18:22 INFO  : Context for processor 'microblaze_0' is selected.
+10:18:22 INFO  : The application 'C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/main/Debug/main.elf' is downloaded to processor 'microblaze_0'.
+10:18:22 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+loadhw C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/system_top_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+dow C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/main/Debug/main.elf
+----------------End of Script----------------
+
+10:18:22 INFO  : Memory regions updated for context MicroBlaze #0
+10:18:22 INFO  : Context for processor 'microblaze_0' is selected.
+10:18:23 INFO  : 'con' command is executed.
+10:18:23 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+con
+----------------End of Script----------------
+
+10:32:50 INFO  : Disconnected from the channel tcfchan#5.
+10:32:50 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A" && level==0} -index 0' command is executed.
+10:32:50 INFO  : 'fpga -state' command is executed.
+10:32:50 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:32:51 INFO  : Context for processor 'microblaze_0' is selected.
+10:32:51 INFO  : Hardware design information is loaded from 'C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/system_top_hw_platform_0/system.hdf'.
+10:32:51 INFO  : Context for processor 'microblaze_0' is selected.
+10:32:51 INFO  : Processor reset is completed for 'microblaze_0'.
+10:32:51 INFO  : Context for processor 'microblaze_0' is selected.
+10:32:52 INFO  : The application 'C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/main/Debug/main.elf' is downloaded to processor 'microblaze_0'.
+10:32:52 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+loadhw C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/system_top_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+dow C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/main/Debug/main.elf
+----------------End of Script----------------
+
+10:32:52 INFO  : Memory regions updated for context MicroBlaze #0
+10:32:52 INFO  : Context for processor 'microblaze_0' is selected.
+10:32:52 INFO  : 'con' command is executed.
+10:32:52 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+con
+----------------End of Script----------------
+
+10:36:11 INFO  : Disconnected from the channel tcfchan#6.
+10:36:11 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A" && level==0} -index 0' command is executed.
+10:36:11 INFO  : 'fpga -state' command is executed.
+10:36:11 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:36:12 INFO  : Context for processor 'microblaze_0' is selected.
+10:36:12 INFO  : Hardware design information is loaded from 'C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/system_top_hw_platform_0/system.hdf'.
+10:36:12 INFO  : Context for processor 'microblaze_0' is selected.
+10:36:12 INFO  : Processor reset is completed for 'microblaze_0'.
+10:36:13 INFO  : Context for processor 'microblaze_0' is selected.
+10:36:13 INFO  : The application 'C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/main/Debug/main.elf' is downloaded to processor 'microblaze_0'.
+10:36:13 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+loadhw C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/system_top_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+dow C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/main/Debug/main.elf
+----------------End of Script----------------
+
+10:36:13 INFO  : Memory regions updated for context MicroBlaze #0
+10:36:13 INFO  : Context for processor 'microblaze_0' is selected.
+10:36:13 INFO  : 'con' command is executed.
+10:36:13 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent NetFPGA-SUME 210301674260A"} -index 0
+con
+----------------End of Script----------------
+
+10:43:32 INFO  : Launching XSDB server: xsdb.bat C:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+10:46:32 ERROR : Timed out. 180 seconds have elapsed while waiting for XSDB server to launch.
+10:46:32 WARN  : Unexpected exception occurred.
+java.lang.Exception: java.lang.Error: Channel is waiting for Hello message
+	at org.eclipse.tcf.core.Command.<init>(Command.java:83)
+	at com.xilinx.sdk.xsdb.XSDBCommandManager$8.<init>(XSDBCommandManager.java:384)
+	at com.xilinx.sdk.xsdb.XSDBCommandManager.issueTcfCmd(XSDBCommandManager.java:384)
+	at com.xilinx.sdk.xsdb.XSDBCommandManager.access$4(XSDBCommandManager.java:381)
+	at com.xilinx.sdk.xsdb.XSDBCommandManager$7.run(XSDBCommandManager.java:376)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.Error: Channel is waiting for Hello message
+	at org.eclipse.tcf.core.AbstractChannel.sendCommand(AbstractChannel.java:874)
+	at org.eclipse.tcf.core.Command.<init>(Command.java:79)
+	... 6 more
+12:58:39 INFO  : Launching XSDB server: xsdb.bat C:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+12:58:40 INFO  : XSDB server has started successfully.
+12:58:41 INFO  : Processing command line option -hwspec C:/Users/lawpark/Documents/hls_project/mcml_project/mcml_project.sdk/system_top.hdf.
+12:58:41 INFO  : Checking for hwspec changes in the project system_top_hw_platform_0.

@@ -1,0 +1,26 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Tue May 03 10:04:46 2016
+# Process ID: 4180
+# Current directory: C:/Users/lawpark/Desktop/mcml_project.xpr/mcml_project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17656 C:\Users\lawpark\Desktop\mcml_project.xpr\mcml_project\mcml_project.xpr
+# Log file: C:/Users/lawpark/Desktop/mcml_project.xpr/mcml_project/vivado.log
+# Journal file: C:/Users/lawpark/Desktop/mcml_project.xpr/mcml_project\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/lawpark/Desktop/mcml_project.xpr/mcml_project/mcml_project.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/lawpark/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-20068-dell_precision/PrjAr/_X_' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/lawpark/Desktop/mcml_project.xpr/mcml_project/mcml_project.ipdefs/mmcl_0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2015.4/data/ip'.
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'mb_system.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+mb_system_mcml_0_0
+
+open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:11 . Memory (MB): peak = 887.824 ; gain = 295.953
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue May 03 10:05:10 2016...

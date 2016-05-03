@@ -1,0 +1,215 @@
+/******************************************************************************
+*
+* Copyright (C) 2009 - 2014 Xilinx, Inc.  All rights reserved.
+*
+* Permission is hereby granted, free of charge, to any person obtaining a copy
+* of this software and associated documentation files (the "Software"), to deal
+* in the Software without restriction, including without limitation the rights
+* to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+* copies of the Software, and to permit persons to whom the Software is
+* furnished to do so, subject to the following conditions:
+*
+* The above copyright notice and this permission notice shall be included in
+* all copies or substantial portions of the Software.
+*
+* Use of the Software is limited solely to applications:
+* (a) running on a Xilinx device, or
+* (b) that interact with a Xilinx device through a bus or interconnect.
+*
+* THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+* IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+* FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
+* XILINX  BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+* WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF
+* OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+* SOFTWARE.
+*
+* Except as contained in this notice, the name of the Xilinx shall not be used
+* in advertising or otherwise to promote the sale, use or other dealings in
+* this Software without prior written authorization from Xilinx.
+*
+******************************************************************************/
+
+#include <stdio.h>
+#include "xparameters.h"
+#include "xil_types.h"
+#include "xstatus.h"
+#include "xil_testmem.h"
+#include "xgpio.h"
+#include "xintc.h"
+#include "xil_exception.h"
+#include "xmcml.h"
+#include "xmcml_hw.h"
+
+#include "platform.h"
+#include "memory_config.h"
+#define M_BASE_ADDR XPAR_MCML_0_S_AXI_CTRL_REG_BASEADDR
+
+void test_memory_range(struct memory_range_s *range);
+void GpioIsr(void *InstancePtr);
+int SetupInterruptSystem();
+void putnum(unsigned int num);
+void print(char *ptr);
+
+/*
+void test_memory_range(struct memory_range_s *range) {
+    XStatus status;
+    print("Testing memory region: "); print(range->name);  print("\n\r");
+    print("    Memory Controller: "); print(range->ip);  print("\n\r");
+    print("         Base Address: 0x"); putnum(range->base); print("\n\r");
+    print("                 Size: 0x"); putnum(range->size); print (" bytes \n\r");
+
+    status = Xil_TestMem32((u32*)range->base, 1024, 0xAAAA5555, XIL_TESTMEM_ALLMEMTESTS);
+    print("          32-bit test: "); print(status == XST_SUCCESS? "PASSED!":"FAILED!"); print("\n\r");
+
+    status = Xil_TestMem16((u16*)range->base, 2048, 0xAA55, XIL_TESTMEM_ALLMEMTESTS);
+    print("          16-bit test: "); print(status == XST_SUCCESS? "PASSED!":"FAILED!"); print("\n\r");
+
+    status = Xil_TestMem8((u8*)range->base, 4096, 0xA5, XIL_TESTMEM_ALLMEMTESTS);
+    print("           8-bit test: "); print(status == XST_SUCCESS? "PASSED!":"FAILED!"); print("\n\r");
+
+}
+*/
+
+
+/************************** Variable Definitions *****************************/
+/*
+ * The following are declared globally so they are zeroed and so they are
+ * easily accessible from a debugger
+ */
+static XGpio gpio_led;
+static XGpio gpio_btn;
+//static XIntc Intc;
+static XMcml mcml;
+
+void param_setup()
+{
+	int i;
+
+	float * f_ptr = (float *) memory_ranges[Z0_CTRL].base;
+	*(f_ptr++) = 0.0f;
+	*(f_ptr++) = 0.0f;
+	*f_ptr = 0.0f;
+
+	f_ptr = (float *) memory_ranges[Z1_CTRL].base;
+	*(f_ptr++) = 0.0f;
+	*(f_ptr++) = 0.4f;
+	*f_ptr = 0.0f;
+
+	f_ptr = (float *) memory_ranges[N_CTRL].base;
+	*(f_ptr++) = 1.0f;
+	*(f_ptr++) = 1.37f;
+	*f_ptr = 1.0f;
+
+	f_ptr = (float *) memory_ranges[MUA_CTRL].base;
+	*(f_ptr++) = 0.0f;
+	*(f_ptr++) = 1.0f;
+	*f_ptr = 0.0f;
+
+	f_ptr = (float *) memory_ranges[MUS_CTRL].base;
+	*(f_ptr++) = 0.0f;
+	*(f_ptr++) = 10.0f;
+	*f_ptr = 0.0f;
+
+	f_ptr = (float *) memory_ranges[G_CTRL].base;
+	*(f_ptr++) = 0.0f;
+	*(f_ptr++) = 0.1f;
+	*f_ptr = 0.0f;
+
+	//XMcml_WriteReg(BaseAddress, RegOffset, Data)
+	XMcml_WriteReg(M_BASE_ADDR, XMCML_CTRL_REG_ADDR_KERNEL_INFO_P_NUM_PHOTONS_I_DATA, 1000000);
+	XMcml_WriteReg(M_BASE_ADDR, XMCML_CTRL_REG_ADDR_KERNEL_INFO_P_NZ_I_DATA, 40);
+	XMcml_WriteReg(M_BASE_ADDR, XMCML_CTRL_REG_ADDR_KERNEL_INFO_P_NR_I_DATA, 50);
+	XMcml_WriteReg(M_BASE_ADDR, XMCML_CTRL_REG_ADDR_KERNEL_INFO_P_NA_I_DATA, 1);
+
+	f_ptr = (float*)(M_BASE_ADDR + XMCML_CTRL_REG_ADDR_KERNEL_INFO_P_DZ_I_DATA);
+	*f_ptr = 100.0f;
+	f_ptr = (float*)(M_BASE_ADDR + XMCML_CTRL_REG_ADDR_KERNEL_INFO_P_DR_I_DATA);
+	*f_ptr = 100.0f;
+	f_ptr = (float*)(M_BASE_ADDR + XMCML_CTRL_REG_ADDR_KERNEL_INFO_P_DA_I_DATA);
+	*f_ptr = 1.57079f;
+
+	XMcml_WriteReg(M_BASE_ADDR, XMCML_CTRL_REG_ADDR_KERNEL_INFO_P_NUM_LAYERS_I_DATA, 1);
+
+
+	float* rd_ra = (float *)memory_ranges[RDRA_CTRL].base;
+	float * ar_z = (float *)memory_ranges[ARZ_CTRL].base;
+	float * tt_ra = (float *)memory_ranges[TTRA_CTRL].base;
+
+	for(i=0; i< 10000; i++)
+	{
+		*(rd_ra++) = 0.0f;
+		*(ar_z++) = 0.0f;
+		*(tt_ra++) = 0.0f;
+	}
+
+}
+
+
+int main()
+{
+    int i;
+    init_platform();
+    print("--Starting...--\n\r");
+
+    /*for (i = 0; i < n_memory_ranges; i++) {
+        test_memory_range(&memory_ranges[i]);
+    }*/
+
+	int Status;
+	/* Initialize the GPIO driver. If an error occurs then exit */
+	Status = XGpio_Initialize(&gpio_btn, XPAR_GPIO_BTN_DEVICE_ID);
+	if (Status != XST_SUCCESS) {
+		return XST_FAILURE;
+	}
+
+	/* Initialize the GPIO driver. If an error occurs then exit */
+	Status = XGpio_Initialize(&gpio_led, XPAR_GPIO_LED_DEVICE_ID);
+	if (Status != XST_SUCCESS) {
+		return XST_FAILURE;
+	}
+
+	/*
+	 * Perform a self-test on the GPIO.  This is a minimal test and only
+	 * verifies that there is not any bus error when reading the data
+	 * register
+	 */
+	XGpio_SelfTest(&gpio_btn);
+	XGpio_SelfTest(&gpio_led);
+
+	XGpio_SetDataDirection(&gpio_btn, XGPIO_IR_CH1_MASK, 0x1);
+	XGpio_SetDataDirection(&gpio_led, XGPIO_IR_CH1_MASK, 0x0);
+
+	XGpio_DiscreteClear(&gpio_led, XGPIO_IR_CH1_MASK, 0xffff);
+
+	param_setup();
+	XMcml_Initialize(&mcml, XPAR_MCML_0_DEVICE_ID);
+    print("--Starting Kernel--\n\r");
+	XMcml_Start(&mcml);
+
+    //cleanup_platform();
+    while (1)
+    {
+    	if(XMcml_IsDone(&mcml)) break;
+    }
+
+    print("NOTE: MCML kernel is done.\n\r");
+	XGpio_DiscreteSet(&gpio_led, XGPIO_IR_CH1_MASK, 0x1);
+
+	float * ar_z = (float *)memory_ranges[ARZ_CTRL].base;
+	for(i=0; i< 10000; i++)
+	{
+		int whole, thousandths;
+		float fval = *(ar_z++);
+		whole = fval;
+		thousandths = (fval - whole) * 1000;
+		if(i % 100 == 0)
+			xil_printf("\n\r");
+
+		xil_printf("%d.%3d *", whole, thousandths);
+
+	}
+	XGpio_DiscreteSet(&gpio_led, XGPIO_IR_CH1_MASK, 0x3);
+    print("--DONE-- \n\r");
+    return 0;
+}

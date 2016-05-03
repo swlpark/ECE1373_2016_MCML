@@ -1,0 +1,285 @@
+/******************************************************************************
+*
+* Copyright (C) 2009 - 2014 Xilinx, Inc.  All rights reserved.
+*
+* Permission is hereby granted, free of charge, to any person obtaining a copy
+* of this software and associated documentation files (the "Software"), to deal
+* in the Software without restriction, including without limitation the rights
+* to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+* copies of the Software, and to permit persons to whom the Software is
+* furnished to do so, subject to the following conditions:
+*
+* The above copyright notice and this permission notice shall be included in
+* all copies or substantial portions of the Software.
+*
+* Use of the Software is limited solely to applications:
+* (a) running on a Xilinx device, or
+* (b) that interact with a Xilinx device through a bus or interconnect.
+*
+* THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+* IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+* FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
+* XILINX  BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+* WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF
+* OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+* SOFTWARE.
+*
+* Except as contained in this notice, the name of the Xilinx shall not be used
+* in advertising or otherwise to promote the sale, use or other dealings in
+* this Software without prior written authorization from Xilinx.
+*
+******************************************************************************/
+
+#include <stdio.h>
+#include "xparameters.h"
+#include "xil_types.h"
+#include "xstatus.h"
+#include "xil_testmem.h"
+#include "xgpio.h"
+#include "xintc.h"
+#include "xil_exception.h"
+
+#include "platform.h"
+#include "memory_config.h"
+
+void test_memory_range(struct memory_range_s *range);
+void GpioIsr(void *InstancePtr);
+int SetupInterruptSystem();
+void putnum(unsigned int num);
+void print(char *ptr);
+
+void test_memory_range(struct memory_range_s *range) {
+    XStatus status;
+
+    /* This application uses print statements instead of xil_printf/printf
+     * to reduce the text size.
+     *
+     * The default linker script generated for this application does not have
+     * heap memory allocated. This implies that this program cannot use any
+     * routines that allocate memory on heap (printf is one such function).
+     * If you'd like to add such functions, then please generate a linker script
+     * that does allocate sufficient heap memory.
+     */
+
+    print("Testing memory region: "); print(range->name);  print("\n\r");
+    print("    Memory Controller: "); print(range->ip);  print("\n\r");
+    print("         Base Address: 0x"); putnum(range->base); print("\n\r");
+    print("                 Size: 0x"); putnum(range->size); print (" bytes \n\r");
+
+    status = Xil_TestMem32((u32*)range->base, 1024, 0xAAAA5555, XIL_TESTMEM_ALLMEMTESTS);
+    print("          32-bit test: "); print(status == XST_SUCCESS? "PASSED!":"FAILED!"); print("\n\r");
+
+    status = Xil_TestMem16((u16*)range->base, 2048, 0xAA55, XIL_TESTMEM_ALLMEMTESTS);
+    print("          16-bit test: "); print(status == XST_SUCCESS? "PASSED!":"FAILED!"); print("\n\r");
+
+    status = Xil_TestMem8((u8*)range->base, 4096, 0xA5, XIL_TESTMEM_ALLMEMTESTS);
+    print("           8-bit test: "); print(status == XST_SUCCESS? "PASSED!":"FAILED!"); print("\n\r");
+
+}
+/************************** Variable Definitions *****************************/
+/*
+ * The following are declared globally so they are zeroed and so they are
+ * easily accessible from a debugger
+ */
+static XGpio gpio_led;
+static XGpio gpio_btn;
+static XIntc Intc;
+
+int main()
+{
+    int i;
+
+    init_platform();
+
+    print("--Starting Memory Test Application--\n\r");
+    print("NOTE: This application runs with D-Cache disabled.\n\r");
+
+    for (i = 0; i < n_memory_ranges; i++) {
+        test_memory_range(&memory_ranges[i]);
+    }
+    print("--Memory Test Application Complete--\n\r");
+
+	int Status;
+	/* Initialize the GPIO driver. If an error occurs then exit */
+	Status = XGpio_Initialize(&gpio_btn, XPAR_GPIO_BTN_DEVICE_ID);
+	if (Status != XST_SUCCESS) {
+		return XST_FAILURE;
+	}
+
+	/* Initialize the GPIO driver. If an error occurs then exit */
+	Status = XGpio_Initialize(&gpio_led, XPAR_GPIO_LED_DEVICE_ID);
+	if (Status != XST_SUCCESS) {
+		return XST_FAILURE;
+	}
+
+	/*
+	 * Perform a self-test on the GPIO.  This is a minimal test and only
+	 * verifies that there is not any bus error when reading the data
+	 * register
+	 */
+	XGpio_SelfTest(&gpio_btn);
+	XGpio_SelfTest(&gpio_led);
+
+	XGpio_SetDataDirection(&gpio_btn, XGPIO_IR_CH1_MASK, 0x1);
+	XGpio_SetDataDirection(&gpio_led, XGPIO_IR_CH1_MASK, 0x0);
+
+    cleanup_platform();
+    while (1)
+    {
+
+    }
+
+    return 0;
+}
+
+/****************************************************************************/
+/**
+* This function is the Interrupt Service Routine for the GPIO device.  It
+* will be called by the processor whenever an interrupt is asserted by the
+* device.
+*
+* This function will detect the push button on the board has changed state
+* and then turn on or off the LED.
+*
+* @param	InstancePtr is the GPIO instance pointer to operate on.
+*		It is a void pointer to meet the interface of an interrupt
+*		processing function.
+*
+* @return	None.
+*
+* @note		None.
+*
+*****************************************************************************/
+void GpioIsr(void *InstancePtr)
+{
+	XGpio *GpioPtr = (XGpio *)InstancePtr;
+	XGpio *LEDPtr = (XGpio *)InstancePtr;
+	u32 Led;
+	u32 LedState;
+	u32 Buttons;
+	u32 ButtonFound;
+	u32 ButtonsChanged = 0;
+	static u32 PreviousButtons;
+
+	/*
+	 * Disable the interrupt
+	 */
+	XGpio_InterruptDisable(GpioPtr, 0x1);
+
+	/* Keep track of the number of interrupts that occur */
+
+	/*
+	 * There should not be any other interrupts occuring other than the
+	 * the button changes
+	 */
+	if ((XGpio_InterruptGetStatus(GpioPtr) &  XGPIO_IR_CH1_MASK) != XGPIO_IR_CH1_MASK) {
+		return;
+	}
+
+
+	/*
+	 * Read state of push buttons and determine which ones changed
+	 * states from the previous interrupt. Save a copy of the buttons
+	 * for the next interrupt
+	 */
+	Buttons = XGpio_DiscreteRead(GpioPtr,  XGPIO_IR_CH1_MASK);
+	ButtonsChanged = Buttons ^ PreviousButtons;
+	PreviousButtons = Buttons;
+
+	/*
+	 * Handle all button state changes that occurred since the last
+	 * interrupt
+	 */
+	while (ButtonsChanged != 0) {
+		/*
+		 * Determine which button changed state and then get
+		 * the current state of the associated LED
+		 */
+		 LedState = XGpio_DiscreteRead(GpioPtr, LED_CHANNEL) & Led;
+
+		 /*
+		  * Clear the button that is being processed so that it is
+		  * done and others can be handled also
+		  */
+		 ButtonsChanged &= ~ButtonFound;
+
+		 /* Toggle the state of the LED */
+		 if (LedState) {
+			 XGpio_DiscreteClear(GpioPtr, LED_CHANNEL, Led);
+		 } else {
+			 XGpio_DiscreteSet(GpioPtr, LED_CHANNEL, Led);
+		 }
+	 }
+
+	 /* Clear the interrupt such that it is no longer pending in the GPIO */
+	 (void)XGpio_InterruptClear(GpioPtr,  XGPIO_IR_CH1_MASK);
+	 /*
+	  * Enable the interrupt
+	  */
+	 XGpio_InterruptEnable(GpioPtr,  XGPIO_IR_CH1_MASK);
+}
+
+/****************************************************************************/
+/**
+* This function sets up the interrupt system for the example.  The processing
+* contained in this funtion assumes the hardware system was built with
+* and interrupt controller.
+*
+* @param	None.
+*
+* @return	A status indicating XST_SUCCESS or a value that is contained in
+*		xstatus.h.
+*
+* @note		None.
+*
+*****************************************************************************/
+int SetupInterruptSystem()
+{
+	int Result;
+	XIntc *IntcInstancePtr = &Intc;
+
+	/*
+	 * Initialize the interrupt controller driver so that it's ready to use.
+	 * specify the device ID that was generated in xparameters.h
+	 */
+	Result = XIntc_Initialize(IntcInstancePtr, XPAR_MICROBLAZE_0_AXI_INTC_DEVICE_ID);
+	if (Result != XST_SUCCESS) {
+		return Result;
+	}
+
+	/* Hook up interrupt service routine */
+	XIntc_Connect(IntcInstancePtr, XPAR_INTC_0_GPIO_0_VEC_ID,
+(Xil_ExceptionHandler)GpioIsr, &gpio_btn);
+
+	/* Enable the interrupt vector at the interrupt controller */
+	XIntc_Enable(IntcInstancePtr, XPAR_INTC_0_GPIO_0_VEC_ID);
+
+	/*
+	 * Start the interrupt controller such that interrupts are recognized
+	 * and handled by the processor
+	 */
+	Result = XIntc_Start(IntcInstancePtr, XIN_REAL_MODE);
+	if (Result != XST_SUCCESS) {
+		return Result;
+	}
+
+	/*
+	 * Enable the GPIO channel interrupts so that push button can be
+	 * detected and enable interrupts for the GPIO device
+	 */
+	XGpio_InterruptEnable(&gpio_btn, XGPIO_IR_CH1_MASK);
+	XGpio_InterruptGlobalEnable(&gpio_btn);
+
+	/*
+	 * Initialize the exception table and register the interrupt
+	 * controller handler with the exception table
+	 */
+	Xil_ExceptionInit();
+	Xil_ExceptionRegisterHandler(XIL_EXCEPTION_ID_INT,
+			 (Xil_ExceptionHandler)XIntc_InterruptHandler, IntcInstancePtr);
+	/* Enable non-critical exceptions */
+	Xil_ExceptionEnable();
+
+	return XST_SUCCESS;
+}
+
